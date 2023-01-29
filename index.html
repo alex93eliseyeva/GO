@@ -85,6 +85,96 @@
       </section>
 
       <section>
+        <h2>Забронировать</h2>
+
+        <form action="https://jsonplaceholder.typicode.com/posts" method="post" target="_blank">
+          <fieldset>
+            <input type="radio" name="rooms" value="80s" id="80">
+            <label for="80">80's vibes</label>
+
+            <input type="radio" name="rooms" value="starWars" id="SW">
+            <label for="SW">star wars</label>
+
+            <input type="radio" name="rooms" value="wildWest" id="WW">
+            <label for="WW">wild west</label>
+
+            <input type="radio" name="rooms" value="neonStyle" id="NS">
+            <label for="NS">neon style</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Собери набор развлечений</legend>
+            <fieldset>
+              <legend>Приставка</legend>
+                <input type="radio" name="console" value="PlayStation" id="PS">
+                <label for="PS">PlayStation</label>
+
+                <input type="radio" name="console" value="segaMegaDrive" id="SMD">
+                <label for="SMD">Sega Mega Drive</label>
+
+                <input type="radio" name="console" value="xboxOneS" id="Xb">
+                <label for="Xb">X-box One S</label>
+
+                <input type="radio" name="console" value="dendy" id="D">
+                <label for="D">Dendy</label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Настольные игры</legend>
+                <input type="checkbox" name="game" value="jenga" id="J">
+                <label for="J">Jenga</label>
+
+                <input type="checkbox" name="game" value="monopoly" id="Mono">
+                <label for="Mono">Monopoly</label>
+
+                <input type="checkbox" name="game" value="manchkin" id="Manch">
+                <label for="Manch">Манчкин</label>
+
+                <input type="checkbox" name="game" value="alias" id="A">
+                <label for="A">Alias</label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Дополнительно</legend>
+                <input type="checkbox" name="extra" value="karaoke" id="K">
+                <label for="K">Караоке</label>
+
+                <input type="checkbox" name="extra" value="vr" id="VR">
+                <label for="VR">VR</label>
+            </fieldset>
+          </fieldset>
+          <fieldset>
+            <legend>Выбери дату и время</legend>
+              <label for="date">Дата</label>
+              <input type="date" name="date" id="date" required>
+
+              <label for="time">Время</label>
+              <input type="time" name="time" id="time" required>
+
+              <label for="count">Количество человек</label>
+              <input type="number" name="count" id="count" required>
+
+              <label for="name">Имя</label>
+              <input type="text" name="name" id="name" required>
+
+              <label for="surname">Фамилия</label>
+              <input type="text" name="surname" id="surname" required>
+
+              <label for="tel">Номер телефона</label>
+              <input type="number" name="tel" id="tel" required>
+
+              <input type="checkbox" name="confirm" id="confirm">
+              <label for="confirm">Я старше 18 лет</label>
+          </fieldset>
+
+          <button>Забронировать</button>
+
+          <input type="checkbox" name="data" id="data" required>
+          <label for="data">Согласен на обработку данных</label>
+        </form>
+      </section>
+
+      <section>
         <h2 id="about">О нас</h2>
 
         <p>Для наших гостей мы создали <i>концептуально новое игровое пространство виртуальной реальности</i> в центральной части города.</p>
