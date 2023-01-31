@@ -85,10 +85,12 @@
       </section>
 
       <section>
-        <h2>Забронировать</h2>
+        <h2>Забронировать зал просто</h2>
 
         <form action="https://jsonplaceholder.typicode.com/posts" method="post" target="_blank">
           <fieldset>
+            <legend>Выберите зал</legend>
+            
             <input type="radio" name="rooms" value="80s" id="80">
             <label for="80">80's vibes</label>
 
@@ -105,66 +107,86 @@
           <fieldset>
             <legend>Собери набор развлечений</legend>
             <fieldset>
-              <legend>Приставка</legend>
-                <input type="radio" name="console" value="PlayStation" id="PS">
-                <label for="PS">PlayStation</label>
-
-                <input type="radio" name="console" value="segaMegaDrive" id="SMD">
-                <label for="SMD">Sega Mega Drive</label>
-
-                <input type="radio" name="console" value="xboxOneS" id="Xb">
-                <label for="Xb">X-box One S</label>
-
-                <input type="radio" name="console" value="dendy" id="D">
-                <label for="D">Dendy</label>
+              <legend>Приставка</legend>                
+                <label>
+                  <input type="radio" name="console" value="PlayStation">PlayStation
+                </label>
+                
+                <label>
+                  <input type="radio" name="console" value="segaMegaDrive">Sega Mega Drive
+                </label>
+                
+                <label>
+                  <input type="radio" name="console" value="xboxOneS">X-box One S
+                </label>
+                
+                <label>
+                  <input type="radio" name="console" value="dendy">Dendy
+                </label>
             </fieldset>
 
             <fieldset>
-              <legend>Настольные игры</legend>
-                <input type="checkbox" name="game" value="jenga" id="J">
-                <label for="J">Jenga</label>
-
-                <input type="checkbox" name="game" value="monopoly" id="Mono">
-                <label for="Mono">Monopoly</label>
-
-                <input type="checkbox" name="game" value="manchkin" id="Manch">
-                <label for="Manch">Манчкин</label>
-
-                <input type="checkbox" name="game" value="alias" id="A">
-                <label for="A">Alias</label>
+              <legend>Настольные игры</legend>                
+                <label>
+                  <input type="checkbox" name="game" value="jenga">Jenga
+                </label>
+                
+                <label>
+                  <input type="checkbox" name="game" value="monopoly">Monopoly
+                </label>
+                
+                <label>
+                  <input type="checkbox" name="game" value="manchkin">Манчкин
+                </label>
+                
+                <label>
+                  <input type="checkbox" name="game" value="alias">Alias
+                </label>
             </fieldset>
 
             <fieldset>
-              <legend>Дополнительно</legend>
-                <input type="checkbox" name="extra" value="karaoke" id="K">
-                <label for="K">Караоке</label>
-
-                <input type="checkbox" name="extra" value="vr" id="VR">
-                <label for="VR">VR</label>
+              <legend>Дополнительно</legend>              
+                <label>
+                  <input type="checkbox" name="extra" value="karaoke">Караоке
+                </label>
+                
+                <label>
+                  <input type="checkbox" name="extra" value="vr">VR
+                </label>
             </fieldset>
           </fieldset>
+
           <fieldset>
             <legend>Выбери дату и время</legend>
-              <label for="date">Дата</label>
-              <input type="date" name="date" id="date" required>
 
-              <label for="time">Время</label>
-              <input type="time" name="time" id="time" required>
+            <div>
+              <div>
+                <label for="date">Дата</label>
+                <input type="date" name="date" id="date" required>
+
+                <label for="time">Время</label>
+                <input type="time" name="time" id="time" required>
+              </div>
 
               <label for="count">Количество человек</label>
               <input type="number" name="count" id="count" required>
+            </div>
 
+            <div>
               <label for="name">Имя</label>
               <input type="text" name="name" id="name" required>
 
               <label for="surname">Фамилия</label>
               <input type="text" name="surname" id="surname" required>
+            </div>
 
+            <div>
               <label for="tel">Номер телефона</label>
               <input type="number" name="tel" id="tel" required>
 
               <input type="checkbox" name="confirm" id="confirm">
               <label for="confirm">Я старше 18 лет</label>
+            </div>
           </fieldset>
 
           <button type="submit">Забронировать</button>
@@ -186,6 +208,43 @@
   
           <p><cite>Аркадий Абакшин, создатель игровой территории GAME OVER</cite></p>
         </blockquote>
+      </section>
+
+      <section>
+        <h2>Отзывы посетителей</h2>
+
+        <div>
+          <figure>
+            <img src="img/max.jpeg" alt="Фото посетителя Макса Самойлова" width="228" height="236">
+            <figcaption>Макс Самойлов</figcaption>
+          </figure>
+
+          <blockquote>
+            <p>Отмечали день рождения с компанией друзей, всё было очень круто! WR очки это просто бомба, никогда ещё я не был в таком полном игровом погружении. Сервис на высоте!</p>
+          </blockquote>
+        </div>
+
+        <div>
+          <figure>
+            <img src="img/oxana.jpeg" alt="Фото посетителя Оксаны Григорьевой" width="248" height="237">
+            <figcaption>Оксана Григорьева</figcaption>
+          </figure>
+
+          <blockquote>          
+            <p>Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе больше нет подобных заведений</p>
+          </blockquote>
+        </div>
+
+        <div>
+          <figure>
+            <img src="img/nikita.jpeg" alt="Фото посетителя Никиты Ященко" width="227" height="270">
+            <figcaption>Никита Ященко</figcaption>
+          </figure>
+
+          <blockquote>
+            <p>Немного подвисала игра в VR очках, а так всё норм. Крутое оформление комнаты в стиле звёздных войн. Попал в атмосферу космоса</p>
+          </blockquote>
+        </div>
       </section>
     </main>
 
