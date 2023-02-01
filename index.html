@@ -161,11 +161,14 @@
 
             <div>
               <div>
-                <input type="date" name="date" id="date" placeholder="Дата" required>
+                <label for="date" hidden>Дата</label>
+                <input type="date" name="date" id="date" required>
 
-                <input type="time" name="time" id="time" placeholder="Время" required>
+                <label for="time" hidden>Время</label>
+                <input type="time" name="time" id="time" required>
               </div>
 
+              <label for="count" hidden>Сколько человек</label>
               <input type="number" name="count" id="count" placeholder="Сколько человек" required>
             </div>
 
