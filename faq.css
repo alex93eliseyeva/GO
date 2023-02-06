@@ -1,28 +1,42 @@
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 .item {
   background-color: #fff;
-  color: #1C1A1A;
-  font-weight: 700;
   font-size: 24px;
   padding: 30px 70px;
   margin-bottom: 20px;
 }
 
-.item:nth-child(2n) {
-  background-color: #440F51;
-  color: #FFFFFF;
+.item:last-child {
+  margin-bottom: 0;
 }
 
-.item:nth-child(2n):after {
+.item:nth-child(odd) {
+  color: #1C1A1A;
+  font-weight: 700;
+}
+
+.item:nth-child(even) {
+  background-color: #440F51;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+.item:nth-child(even):after {
   content: "";
   display: block;
   float: right;
   width: 40px;
-  height: 40px;
+  height:40px;
   background-image: url("img/open.svg");
   background-size: contain;
 }
 
-.item:nth-child(2n + 1):after {
+.item:nth-child(odd):after {
   content: "";
   display: block;
   float: right;
