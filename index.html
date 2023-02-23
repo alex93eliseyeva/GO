@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>GO</title>
+    <title>Game Over</title>
     <link type="image/svg+xml" rel="icon" href="img/icon.svg">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -12,85 +12,91 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="styles/index.css">
   </head>
 
   <body>
-    <div class="wrapper">
-      <header>
-        <img src="img/logo.svg" alt="Логотип GO" width="120" height="66">
-        <p><b>Меню</b></p>
+    <!--<div class="wrapper">
+      <header class="header">
+        <img class="logo" src="img/logo.svg" alt="Логотип GO" width="120" height="66">
+        <p class="header-menu"><b>Меню</b></p>
       
-        <nav>
-          <ul>
-            <li><a href="#rooms">Залы</a></li>
-            <li><a href="#about">О нас</a></li>
-            <li><a href="#book">Бронь</a></li>
-            <li><a href="#reviews">Отзывы</a></li>
-            <li><a href="#contacts">Контакты</a></li>
+        <nav class="header-nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="#rooms">Залы</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">О нас</a></li>
+            <li class="nav-item"><a class="nav-link" href="#book">Бронь</a></li>
+            <li class="nav-item"><a class="nav-link" href="#reviews">Отзывы</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacts">Контакты</a></li>
           </ul>
         </nav>  
-      </header>
+      </header>-->
 
-      <main>
-        <section>
-          <h1>У нас есть всё для классного отдыха с друзьями!</h1>
+      <main class="main">
+        <section class="main-section">
+          <!--<h1 class="heading">У нас есть всё для классного отдыха с друзьями!</h1>-->
+          
+          <div class="main-container">
+            <p class="main-name">GAME OVER</p>
 
-          <ul>
-            <li>
-              <figure>
+            <p class="main-slogan">Новый формат игры и отдыха</p>
+          </div>
+
+          <!--<ul class="main-list">
+            <li class="main-item">
+              <figure class="main-features">
                 <img src="img/vr.jpg" alt="VR очки" width="380" height="228">
                 <figcaption>VR очки</figcaption>
               </figure>
             </li>
-            <li>
-              <figure>
+            <li class="main-item">
+              <figure class="main-features">
                 <img src="img/audio.jpg" alt="Аудио-система" width="380" height="228">
                 <figcaption>Аудио-система 5.1 с отличным звуком</figcaption>
               </figure>
             </li>
-            <li>
-              <figure>
+            <li class="main-item">
+              <figure class="main-features">
                 <img src="img/micro.jpg" alt="Караоке" width="380" height="228">
                 <figcaption>Караоке (4 микрофона)</figcaption>
               </figure>
             </li>
-            <li>
-              <figure>
+            <li class="main-item">
+              <figure class="main-features">
                 <img src="img/game.jpg" alt="Настольные игры" width="380" height="228">
                 <figcaption>Настольные игры</figcaption>
               </figure>
             </li>
-            <li>
-              <figure>
+            <li class="main-item">
+              <figure class="main-features">
                 <img src="img/netflix.jpg" alt="Киносервис Netflix" width="380" height="228">
                 <figcaption>Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</figcaption>
               </figure>
             </li>
-            <li>
-              <figure>
+            <li class="main-item">
+              <figure class="main-features">
                 <img src="img/sony.jpg" alt="Приставка PlayStation" width="380" height="228">
                 <figcaption>PlayStation 5</figcaption>
               </figure>
             </li>
-          </ul>
+          </ul>-->
         </section>
 
-        <section>
-          <h2 id="rooms">Наши залы</h2>
+        <section class="section-rooms" id="rooms">
+          <h2 class="subheading subheading-rooms">Наши залы</h2>
 
-          <ol>
-            <li><a href="vibes.html">80's vibes</a></li>
-            <li><a href="starwars.html">Star wars</a></li>
-            <li><a href="wildwest.html">Wild west</a></li>
-            <li><a href="neon.html">Neon style</a></li>
+          <ol class="rooms-list">
+            <li class="rooms-item vibes"><a class="rooms-link" href="vibes.html" target="_blank">80's vibes</a></li>
+            <li class="rooms-item starwars"><a class="rooms-link" href="starwars.html" target="_blank">Star wars</a></li>
+            <li class="rooms-item wildwest"><a class="rooms-link" href="wildwest.html" target="_blank">Wild west</a></li>
+            <li class="rooms-item neon"><a class="rooms-link" href="neon.html" target="_blank">Neon style</a></li>
           </ol>
         </section>
 
-        <section>
-          <h2>Забронировать зал просто</h2>
+        <section class="section-book" id="book">
+          <h2 class="subheading subheading-book">Забронировать</h2>
 
-          <form action="https://jsonplaceholder.typicode.com/posts" method="post" target="_blank">
+          <form class="book-form" action="https://jsonplaceholder.typicode.com/posts" method="post" target="_blank">
             <fieldset>
               <legend>Выберите зал</legend>
             
@@ -199,26 +205,29 @@
           </form>
         </section>
 
-        <section>
-          <h2 id="about">О нас</h2>
+        <section class="section-about" id="about">
+          <h2 class="subheading subheading-about">О нас</h2>
 
-          <p>Для наших гостей мы создали <i>концептуально новое игровое пространство виртуальной реальности</i> в центральной части города.</p>
+          <p class="text-about">Для наших гостей мы создали <i>концептуально новое игровое пространство виртуальной реальности</i> в центральной части города.</p>
   
-          <p>Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира.</p>
+          <p class="text-about">Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира.</p>
   
           <blockquote class="blockquote">
-            <p><b>GAME OVER</b> &mdash; это место незабываемых впечатлений</p>
+            <p class="text-blockquote">GAME OVER &mdash; 
+              это место незабываемых впечатлений
+            </p>
   
-            <p><cite>Аркадий Абакшин, создатель игровой территории GAME OVER</cite></p>
+            <p class="text-cite"><cite>Аркадий Абакшин, создатель игровой территории GAME OVER</cite></p>
+
           </blockquote>
         </section>
 
-        <section>
-          <h2 id="reviews">Отзывы посетителей</h2>
+        <!--<section class="section-reviews" id="reviews">
+          <h2 class="subheading subheading-reviews">Отзывы посетителей</h2>
 
-          <ul>
-            <li>
-              <figure>
+          <ul class="reviews-list">
+            <li class="reviews-item">
+              <figure class="reviews-userpic">
                 <img src="img/max.jpeg" alt="Фото посетителя Макса Самойлова" width="228" height="236">
                 <figcaption>Макс Самойлов</figcaption>
               </figure>
@@ -226,8 +235,8 @@
               <p>Отмечали день рождения с компанией друзей, всё было очень круто! WR очки это просто бомба, никогда ещё я не был в таком полном игровом погружении. Сервис на высоте!</p>
             </li>
 
-            <li>
-              <figure>
+            <li class="reviews-item">
+              <figure class="reviews-userpic">
                 <img src="img/oxana.jpeg" alt="Фото посетителя Оксаны Григорьевой" width="248" height="237">
                 <figcaption>Оксана Григорьева</figcaption>
               </figure>
@@ -235,8 +244,8 @@
               <p>Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе больше нет подобных заведений</p>
             </li>
             
-            <li>
-                <figure>
+            <li class="reviews-item">
+                <figure class="reviews-userpic">
                   <img src="img/nikita.jpeg" alt="Фото посетителя Никиты Ященко" width="227" height="270">
                   <figcaption>Никита Ященко</figcaption>
                 </figure>
@@ -244,39 +253,59 @@
                 <p>Немного подвисала игра в VR очках, а так всё норм. Крутое оформление комнаты в стиле звёздных войн. Попал в атмосферу космоса</p>
             </li>
           </ul>
-        </section>
+        </section>-->
 
-        <section>
-          <h2>Частые вопросы</h2>
+        <section class="section-faq">
+          <h2 class="subheading subheading-faq">Частые вопросы</h2>
 
-          <ul class="list">
-            <li class="item">Можно ли забронировать комнату онлайн?</li>
-            <li class="item">Могут ли мне вернуть деньги за бронь?</li>
-            <li class="item">Какая комната самая популярная?</li>
-            <li class="item">Как получить VIP карту?</li>
-            <li class="item">Какая комната самая популярная?</li>
+          <ul class="faq-list">
+            <li class="faq-item">Можно ли забронировать комнату онлайн?</li>
+            <li class="faq-item">Могут ли мне вернуть деньги за бронь?</li>
+            <li class="faq-item">Какая комната самая популярная?</li>
+            <li class="faq-item">Как получить VIP карту?</li>
+            <li class="faq-item">Какая комната самая популярная?</li>
           </ul>
         </section>
       </main>
 
-      <footer>
-        <h2 id="contacts">Контакты</h2>
+      <footer class="footer" id="contacts">
+        <h2 class="subheading subheading-contacts">Контакты</h2>
 
-        <address>
-          <p>г.Москва ул.Аквамарина, 16</p>
+        <address class="address">
+          <div class="check">
+            <p class="contacts contacts-location">г.Москва
+              ул.Аквамарина, 16</p>
+          </div>
+          <p class="contacts contacts-phone"><a class="contacts-link" href="tel:89509302893">8 (950) 930 - 28 - 93</a></p>
 
-          <p><a href="tel:89509302893">8(950)930-28-93</a></p>
-
-          <p><a href="mailto:GameOver@gmail.com">GameOver@gmail.com</a></p>
+          <p class="contacts contacts-mail"><a class="contacts-link" href="mailto:GameOver@gmail.com">GameOver@gmail.com</a></p>
         </address>
 
-        <nav>
-          <ul>
-            <li><a href="https://vk.com" target="_blank">Vkontakte</a></li>
-            <li><a href="https://web.telegram.org" target="_blank">Telegram</a></li>
+        <nav class="footer-nav">
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a class="footer-link" href="https://vk.com" target="_blank">
+                <img src="/img/vk.svg" alt="Логотип социальной сети Вконтакте">
+              </a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="https://web.telegram.org" target="_blank">
+                <img src="/img/telegram.svg" alt="Логотип социальной сети Телеграм">
+              </a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="https://ru.pinterest.com/" target="_blank">
+                <img src="/img/pinterest.svg" alt="Логотип социальной сети Pinterest">
+              </a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="https://www.stumbleupon.com/" target="_blank">
+                <img src="/img/stumble-upon.svg" alt="Логотип социальной сети Stumble Upon">
+              </a>
+            </li>
           </ul>
         </nav>
       </footer>
-    </div>
+    <!--</div>-->
   </body>
 </html>
