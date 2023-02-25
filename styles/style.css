@@ -1,34 +1,33 @@
-/** {
+* {
   box-sizing: border-box;
-}*/
+}
 
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #1B1A1B;
   color: #FFFFFF;
-  max-width: 1180px;
-  padding: 146px 130px 50px;
+}
+
+.wrapper {
+  max-width: 1240px;
+  padding: 0 30px;
   margin: 0 auto;
 }
 
-/*.wrapper {
-  width: 1200px;
-  padding: 30px;
-  margin: 0 auto;
-}*/
-
-.main-container {
+.main-section {
   margin-bottom: 100px;
   min-height: 762px;
   background-image: url("/img/man.png");
   background-repeat: no-repeat;
-  background-position: 505px 61px;
+  background-position: bottom -61px right;
+  background-size: 675px 762px;
 }
 
-.main-name {
+.main-heading {
   font-size: 150px;
   font-weight: 900;
   line-height: 100%;
+  letter-spacing: -10%;
   margin: 0;
 }
 
@@ -39,12 +38,19 @@ body {
   margin: 0 0 0 100px;
 }
 
+.features {
+  margin-bottom: 100px;
+}
+
+.features-heading {
+  display: none;
+}
+
 /*.main-image {
   padding-left: 505px;
 }*/
 
 .section-rooms {
-  max-width: 1180px;
   margin: 0;
 }
 
@@ -73,8 +79,7 @@ body {
 
 .rooms-item {
   margin-bottom: 60px;
-  width: 1180px;
-  height: 710px;
+  background-size: cover;
 }
 
 .rooms-item:last-child {
@@ -90,13 +95,11 @@ body {
   text-transform: uppercase;
   display: block;
   text-align: center;
-  max-width: 211px;
-  padding: 275px 485px;
+  padding: 275px 477px;
 }
 
 .vibes {
   background-image: url("/img/80s.jpg");
-  object-fit: contain;
 }
 
 .starwars {
@@ -121,6 +124,14 @@ body {
   margin: 0 0 100px 0;
 }
 
+.section-about {
+  margin-bottom: 100px;
+}
+
+.content-about {
+  margin-bottom: 78px;
+}
+
 .text-about {
   font-size: 20px;
   line-height: 28px;
@@ -128,57 +139,67 @@ body {
   margin-bottom: 28px;
 }
 
+.text-about:last-child {
+  margin-bottom: 0;
+}
+
 .blockquote {
-  margin: 50px 0 100px;
-  max-width: 1180px;
+  margin: 0;
+  display: flow-root;
 }
 
 .text-blockquote {
+  position: relative;
+  padding-left: 55px;
   font-size: 44px;
   line-height: 50px;
   text-transform: uppercase;
   white-space: pre-line;
+  margin-top: 0;
   margin-bottom: 40px;
 }
 
 .text-blockquote:before {
   content: "“";
-  display: block;
+  position: absolute;
+  left: 0;
+  top: -8px;
   color: #6C0287;
   font-size: 44px;
   font-weight: 900;
   line-height: 50px;
-  width: 38px;
-  height: 34px;
 }
 
 .text-blockquote:after {
-  content: "”";
-  display: block;
+  content: " ”";
   color: #6C0287;
   font-size: 44px;
   font-weight: 900;
   line-height: 50px;
-  width: 38px;
-  height: 34px;
 }
 
 .text-cite {
-  display: block;
-  max-width: 278px;
   font-size: 20px;
   line-height: 28px;
-  margin: 0 0 0 auto;
+  float: right;
+  margin: 0 40px 0 0;
+}
+
+.cite {
+  font-style: normal;
+  display: inline-block;
+  max-width: 250px;
 }
 
 .text-cite:before {
   content: "";
-  display: block;
+  float: left;
   background-image: url("/img/arcady.png");
-  object-fit: cover;
+  background-size: cover;
   width: 80px;
   height: 80px;
   border-radius: 50%;
+  margin-right: 30px;
 }
 
 .subheading-faq {
@@ -196,24 +217,19 @@ body {
 .contacts {
   font-weight: 700;
   font-size: 24px;
+  font-style: normal;
   line-height: 28px;
   white-space: pre-line;
   margin: 0;
+  padding-left: 70px;
+  background-repeat: no-repeat;
+  background-size: 35px 32px;
+  background-position: left;
 }
 
 .contacts-location {
   margin-bottom: 38px;
-}
-
-.contacts-location:before {
-  content: "";
-  display: inline-block;
   background-image: url("/img/location.svg");
-  width: 35px;
-  height: 32px;
-  margin-right: 30px;
-  line-height: 32px;
-  text-align: center;
 }
 
 .contacts-link {
@@ -223,34 +239,19 @@ body {
 
 .contacts-phone {
   margin-bottom: 11px;
-}
-
-.contacts-phone:before {
-  content: "";
-  display: inline-block;
   background-image: url("/img/phone.svg");
-  width: 35px;
-  height: 32px;
-  margin-right: 30px;
-  line-height: 32px;
-  text-align: center;
 }
 
-.contacts-mail:before {
-  content: "";
-  display: inline-block;
+.contacts-mail {
+  margin-bottom: 0;
   background-image: url("/img/mail.svg");
-  width: 35px;
-  height: 32px;
-  margin-right: 26px;
-  line-height: 32px;
-  text-align: center;
 }
 
 .footer-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  font-size: 0;
 }
 
 .footer-item {
@@ -258,6 +259,17 @@ body {
   margin-right: 27px;
 }
 
+.footer-networks {
+  display: block;
+  width: 48px;
+  height: 48px;
+}
+
 .footer-item:last-child {
   margin-right: 0;
+}
+
+.image-networks {
+  width: 48px;
+  height: 48px;
 }
