@@ -17,7 +17,7 @@ body {
 .main-section {
   margin-bottom: 100px;
   min-height: 762px;
-  background-image: url("/img/man.png");
+  background-image: url("../img/man.png");
   background-repeat: no-repeat;
   background-position: bottom -61px right;
   background-size: 675px 762px;
@@ -87,19 +87,19 @@ body {
 }
 
 .vibes {
-  background-image: url("/img/80s.jpg");
+  background-image: url("../img/80s.jpg");
 }
 
 .starwars {
-  background-image: url("/img/star-wars.jpg");
+  background-image: url("../img/star-wars.jpg");
 }
 
 .wildwest {
-  background-image: url("/img/wild-west.jpg");
+  background-image: url("../img/wild-west.jpg");
 }
 
 .neon {
-  background-image: url("/img/neon-style.jpg");
+  background-image: url("../img/neon-style.jpg");
 }
 
 .subheading-book, .subheading-about {
@@ -182,7 +182,7 @@ body {
 .text-cite:before {
   content: "";
   float: left;
-  background-image: url("/img/arcady.png");
+  background-image: url("../img/arcady.png");
   background-size: cover;
   width: 80px;
   height: 80px;
@@ -217,7 +217,7 @@ body {
 
 .contacts-location {
   margin-bottom: 38px;
-  background-image: url("/img/location.svg");
+  background-image: url("../img/location.svg");
 }
 
 .contacts-link {
@@ -227,12 +227,12 @@ body {
 
 .contacts-phone {
   margin-bottom: 11px;
-  background-image: url("/img/phone.svg");
+  background-image: url("../img/phone.svg");
 }
 
 .contacts-mail {
   margin-bottom: 0;
-  background-image: url("/img/mail.svg");
+  background-image: url("../img/mail.svg");
 }
 
 .footer-list {
