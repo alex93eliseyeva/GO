@@ -58,8 +58,13 @@ iframe {
   margin: 0 auto;
 }
 
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 .main-section {
-  margin-bottom: 100px;
+  margin: 0;
   padding-top: 146px;
   min-height: 762px;
   background-image: url("../img/man.png");
@@ -116,7 +121,7 @@ iframe {
 }
 
 .rooms-item:last-child {
-  margin-bottom: 100px;
+  margin-bottom: 0;
 }
 
 .rooms-link {
@@ -154,11 +159,7 @@ iframe {
 .book-form {
   display: block;
   max-width: 1180px;
-  margin: 0 0 100px 0;
-}
-
-.section-about {
-  margin-bottom: 100px;
+  margin: 0;
 }
 
 .content-about {
