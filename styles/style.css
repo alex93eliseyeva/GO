@@ -1,3 +1,10 @@
+@import "main-section/main-section.css";
+@import "faq/faq.css";
+@import "rooms/rooms.css";
+@import "book/book.css";
+@import "about/about.css";
+@import "footer/footer.css";
+
 html {
   position: relative;
   box-sizing: border-box;
@@ -39,9 +46,6 @@ ul {
   margin: 0;
 }
 
-h1,
-h2,
-h3,
 p,
 figure,
 fieldset {
@@ -52,44 +56,15 @@ iframe {
   border: none;
 }
 
-.container {
+.content-container {
   max-width: 1240px;
   padding: 0 30px;
   margin: 0 auto;
 }
 
-section {
+.section {
   padding-top: 50px;
   padding-bottom: 50px;
-}
-
-.main-section {
-  margin: 0;
-  padding-top: 146px;
-  min-height: 762px;
-  background-image: url("../img/man.png");
-  background-repeat: no-repeat;
-  background-position: bottom -207px right;
-  background-size: 675px 762px;;
-}
-
-.main-heading {
-  font-size: 150px;
-  font-weight: 900;
-  line-height: 100%;
-  letter-spacing: -14px;
-  margin: 0;
-}
-
-.main-slogan {
-  font-size: 28px;
-  font-weight: 400;
-  line-height: 50px;
-  margin: 0 0 0 100px;
-}
-
-.section-rooms {
-  margin: 0;
 }
 
 .subheading {
@@ -103,211 +78,29 @@ section {
   text-transform: uppercase;
 }
 
-.subheading-rooms {
+.rooms__subheading {
   margin-bottom: 60px;
 }
 
-.rooms-list {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-  list-style-position: inside;
-  display: inline-block;
-}
-
-.rooms-item {
-  margin-bottom: 60px;
-  background-size: cover;
-}
-
-.rooms-item:last-child {
-  margin-bottom: 0;
-}
-
-.rooms-link {
-  text-decoration: none;
-  color: #FFFFFF;
-  font-size: 70px;
-  font-weight: 700;
-  line-height: 80px;
-  text-transform: uppercase;
-  display: block;
-  text-align: center;
-  padding: 275px 477px;
-}
-
-.vibes {
-  background-image: url("../img/80s.jpg");
-}
-
-.starwars {
-  background-image: url("../img/star-wars.jpg");
-}
-
-.wildwest {
-  background-image: url("../img/wild-west.jpg");
-}
-
-.neon {
-  background-image: url("../img/neon-style.jpg");
-}
-
-.subheading-book, .subheading-about {
+.about__subheading {
   margin-bottom: 50px;
 }
 
-.book-form {
-  display: block;
-  max-width: 1180px;
-  margin: 0;
+.book__subheading {
+  margin-bottom: 50px;
 }
 
-.content-about {
-  margin-bottom: 78px;
-}
-
-.text-about {
-  font-size: 20px;
-  line-height: 28px;
-  margin-top: 0;
-  margin-bottom: 28px;
-}
-
-.text-about:last-child {
-  margin-bottom: 0;
-}
-
-.blockquote {
-  margin: 0;
-  display: flow-root;
-}
-
-.text-blockquote {
-  position: relative;
-  padding-left: 55px;
-  font-size: 44px;
-  line-height: 50px;
-  text-transform: uppercase;
-  white-space: pre-line;
-  margin-top: 0;
+.faq__subheading {
   margin-bottom: 40px;
 }
 
-.text-blockquote:before {
-  content: "“";
-  position: absolute;
-  left: 0;
-  top: -8px;
-  color: #6C0287;
-  font-size: 44px;
-  font-weight: 900;
-  line-height: 50px;
-}
-
-.text-blockquote:after {
-  content: " ”";
-  color: #6C0287;
-  font-size: 44px;
-  font-weight: 900;
-  line-height: 50px;
-}
-
-.text-cite {
-  font-size: 20px;
-  line-height: 28px;
-  float: right;
-  margin: 0 40px 0 0;
-}
-
-.cite {
-  font-style: normal;
-  display: inline-block;
-  max-width: 250px;
-}
-
-.text-cite:before {
-  content: "";
-  float: left;
-  background-image: url("../img/arcady.png");
-  background-size: cover;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  margin-right: 30px;
-}
-
-.subheading-faq {
-  margin-bottom: 40px;
-}
-
-.footer {
-  padding-bottom: 51px;
-}
-
-.subheading-contacts {
+.footer__subheading {
   margin-bottom: 54px;
 }
 
-.address {
-  margin-bottom: 39px;
-}
 
-.contacts {
-  font-weight: 700;
-  font-size: 24px;
-  font-style: normal;
-  line-height: 28px;
-  white-space: pre-line;
-  margin: 0;
-  padding-left: 70px;
-  background-repeat: no-repeat;
-  background-size: 35px 32px;
-  background-position: left;
-}
 
-.contacts-location {
-  margin-bottom: 38px;
-  background-image: url("../img/location.svg");
-}
 
-.contacts-link {
-  text-decoration: none;
-  color: #FFFFFF;
-}
 
-.contacts-phone {
-  margin-bottom: 11px;
-  background-image: url("../img/phone.svg");
-}
 
-.contacts-mail {
-  margin-bottom: 0;
-  background-image: url("../img/mail.svg");
-}
 
-.footer-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  font-size: 0;
-}
-
-.footer-item {
-  display: inline-block;
-  margin-right: 27px;
-}
-
-.footer-networks {
-  display: block;
-  width: 48px;
-  height: 48px;
-}
-
-.footer-item:last-child {
-  margin-right: 0;
-}
-
-.image-networks {
-  width: 48px;
-  height: 48px;
-}

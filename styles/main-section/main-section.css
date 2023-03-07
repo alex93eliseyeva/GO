@@ -1,0 +1,28 @@
+.main-section {
+    margin: 0;
+    padding-top: 146px;
+}
+  
+.main-section__container {
+  background-image: url("img/man.png");
+  background-repeat: no-repeat;
+  background-position: bottom right 30px;
+  background-size: 675px 762px;
+  min-height: 823px;
+}
+  
+.main-section__heading {
+  font-size: 150px;
+  font-weight: 900;
+  line-height: 100%;
+  letter-spacing: -14px;
+  margin: 0;
+}
+  
+.main-section__slogan {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 50px;
+  margin: 0 0 0 100px;
+}
+  

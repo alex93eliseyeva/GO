@@ -1,0 +1,73 @@
+.about__content {
+  margin-bottom: 78px;
+}
+  
+.about__text {
+  font-size: 20px;
+  line-height: 28px;
+  margin-top: 0;
+  margin-bottom: 28px;
+}
+  
+.about__text:last-child {
+  margin-bottom: 0;
+}
+  
+.about-blockquote {
+  margin: 0;
+  display: flow-root;
+}
+  
+.about-blockquote__text {
+  position: relative;
+  padding-left: 55px;
+  font-size: 44px;
+  line-height: 50px;
+  text-transform: uppercase;
+  white-space: pre-line;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+  
+.about-blockquote__text:before {
+  content: "“";
+  position: absolute;
+  left: 0;
+  top: -8px;
+  color: #6C0287;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 50px;
+}
+  
+.about-blockquote__text:after {
+  content: " ”";
+  color: #6C0287;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 50px;
+}
+  
+.about-blockquote__text-cite {
+  font-size: 20px;
+  line-height: 28px;
+  float: right;
+  margin: 0 40px 0 0;
+}
+  
+.about-blockquote__cite {
+  font-style: normal;
+  display: inline-block;
+  max-width: 250px;
+}
+  
+.about-blockquote__text-cite:before {
+  content: "";
+  float: left;
+  background-image: url("img/arcady.png");
+  background-size: cover;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
