@@ -1,4 +1,4 @@
-@import "main-section/main-section.css";
+@import "hero-section/hero-section.css";
 @import "faq/faq.css";
 @import "rooms/rooms.css";
 @import "book/book.css";
@@ -56,7 +56,7 @@ iframe {
   border: none;
 }
 
-.content-container {
+.container {
   max-width: 1240px;
   padding: 0 30px;
   margin: 0 auto;
@@ -67,7 +67,7 @@ iframe {
   padding-bottom: 50px;
 }
 
-.subheading {
+.heading {
   display: block;
   max-width: 980px;
   margin:0 100px;
@@ -78,23 +78,23 @@ iframe {
   text-transform: uppercase;
 }
 
-.rooms__subheading {
+.rooms__heading {
   margin-bottom: 60px;
 }
 
-.about__subheading {
+.about__heading {
   margin-bottom: 50px;
 }
 
-.book__subheading {
+.book__heading {
   margin-bottom: 50px;
 }
 
-.faq__subheading {
+.faq__heading {
   margin-bottom: 40px;
 }
 
-.footer__subheading {
+.footer__heading {
   margin-bottom: 54px;
 }
 

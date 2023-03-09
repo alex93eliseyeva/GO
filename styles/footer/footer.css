@@ -19,49 +19,49 @@
   background-position: left;
 }
   
-.address__contacts-location {
+.address__contacts_type_location {
   margin-bottom: 38px;
   background-image: url("img/location.svg");
 }
   
-.address__contacts-link {
+.address__link {
   text-decoration: none;
   color: #FFFFFF;
 }
   
-.address__contacts-phone {
+.address__contacts_type_phone {
   margin-bottom: 11px;
   background-image: url("img/phone.svg");
 }
   
-.address__contacts-mail {
+.address__contacts_type_mail {
   margin-bottom: 0;
   background-image: url("img/mail.svg");
 }
   
-.nav-networks__list {
+.social__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
   font-size: 0;
 }
   
-.nav-networks__item {
+.social__item {
   display: inline-block;
   margin-right: 27px;
 }
   
-.nav-networks__link {
+.social__link {
   display: block;
   width: 48px;
   height: 48px;
 }
   
-.nav-networks__item:last-child {
+.social__item:last-child {
   margin-right: 0;
 }
   
-.nav-networks__image {
+.social__image {
   width: 48px;
   height: 48px;
 }

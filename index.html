@@ -18,34 +18,34 @@
 
   <body>
       <main class="main">
-        <section class="section main-section">
-          <div class="content-container main-section__container">
-            <h1 class="main-section__heading">GAME OVER</h1>
+        <section class="section hero-section">
+          <div class="container hero-section__container">
+            <h1 class="hero-section__heading">GAME OVER</h1>
 
-            <p class="main-section__slogan">Новый формат игры и отдыха</p>
+            <p class="hero-section__subtitle">Новый формат игры и отдыха</p>
           </div>
         </section>
 
         <section class="section rooms" id="rooms">
-          <div class="content-container">
-            <h2 class="subheading rooms__subheading">Наши залы</h2>
+          <div class="container">
+            <h2 class="heading rooms__heading">Наши залы</h2>
 
-            <ul class="rooms-list">
-              <li class="rooms-list__item rooms-list__item-vibes"><a class="rooms-list__item-link" href="vibes.html" target="_blank">80's vibes</a></li>
-              <li class="rooms-list__item rooms-list__item-starwars"><a class="rooms-list__item-link" href="starwars.html" target="_blank">Star wars</a></li>
-              <li class="rooms-list__item rooms-list__item-wildwest"><a class="rooms-list__item-link" href="wildwest.html" target="_blank">Wild west</a></li>
-              <li class="rooms-list__item rooms-list__item-neon"><a class="rooms-list__item-link" href="neon.html" target="_blank">Neon style</a></li>
+            <ul class="rooms__list">
+              <li class="rooms__item rooms__item_type_vibes"><a class="rooms__link" href="vibes.html" target="_blank">80's vibes</a></li>
+              <li class="rooms__item rooms__item_type_starwars"><a class="rooms__link" href="starwars.html" target="_blank">Star wars</a></li>
+              <li class="rooms__item rooms__item_type_wildwest"><a class="rooms__link" href="wildwest.html" target="_blank">Wild west</a></li>
+              <li class="rooms__item rooms__item_type_neon"><a class="rooms__link" href="neon.html" target="_blank">Neon style</a></li>
             </ul>
           </div>
         </section>
 
         <section class="section book" id="book">
-          <div class="content-container">
-            <h2 class="subheading book__subheading">Забронировать</h2>
+          <div class="container">
+            <h2 class="heading book__heading">Забронировать</h2>
 
             <form class="book__form" action="https://jsonplaceholder.typicode.com/posts" method="post" target="_blank">
-              <fieldset>
-                <legend>Выберите зал</legend>
+              <fieldset class="book__fieldset">
+                <legend class="book__legend">Выберите зал</legend>
             
                 <input type="radio" name="rooms" value="80s" id="80">
                 <label for="80">80's vibes</label>
@@ -60,63 +60,63 @@
                 <label for="NS">neon style</label>
               </fieldset>
 
-              <fieldset>
-                <legend>Собери набор развлечений</legend>
-                <fieldset>
-                  <legend>Приставка</legend>                
-                    <label>
+              <fieldset class="book__fieldset">
+                <legend class="book__legend">Собери набор развлечений</legend>
+                <fieldset class="fieldset">
+                  <legend class="book__legend">Приставка</legend>                
+                    <label class="fieldset__label">
                       <input type="radio" name="console" value="PlayStation">PlayStation
                     </label>
                 
-                    <label>
+                    <label class="fieldset__label">
                       <input type="radio" name="console" value="segaMegaDrive">Sega Mega Drive
                     </label>
                 
-                    <label>
+                    <label class="fieldset__label">
                       <input type="radio" name="console" value="xboxOneS">X-box One S
                     </label>
                 
-                    <label>
+                    <label class="fieldset__label">
                       <input type="radio" name="console" value="dendy">Dendy
                     </label>
                 </fieldset>
 
-                <fieldset>
-                  <legend>Настольные игры</legend>                
-                    <label>
+                <fieldset class="fieldset">
+                  <legend class="book__legend">Настольные игры</legend>                
+                    <label class="fieldset__label">
                       <input type="checkbox" name="game" value="jenga">Jenga
                     </label>
                 
-                    <label>
+                    <label class="fieldset__label">
                       <input type="checkbox" name="game" value="monopoly">Monopoly
                     </label>
                   
-                    <label>
+                    <label class="fieldset__label">
                       <input type="checkbox" name="game" value="manchkin">Манчкин
                     </label>
                   
-                    <label>
+                    <label class="fieldset__label">
                       <input type="checkbox" name="game" value="alias">Alias
                     </label>
                 </fieldset>
 
-                <fieldset>
-                  <legend>Дополнительно</legend>              
-                    <label>
+                <fieldset class="fieldset">
+                  <legend class="book__legend">Дополнительно</legend>              
+                    <label class="fieldset__label">
                       <input type="checkbox" name="extra" value="karaoke">Караоке
                     </label>
                   
-                    <label>
+                    <label class="fieldset__label">
                       <input type="checkbox" name="extra" value="vr">VR
                     </label>
                 </fieldset>
               </fieldset>
 
-              <fieldset>
-                <legend>Выбери дату и время</legend>
+              <fieldset class="fieldset">
+                <legend class="book__legend">Выбери дату и время</legend>
 
-                <div>
-                  <div>
+                <div class="fieldset__container">
+                  <div class="times">
                     <label for="date" hidden>Дата</label>
                     <input type="date" name="date" id="date" required>
 
@@ -128,7 +128,7 @@
                   <input type="number" name="count" id="count" placeholder="Сколько человек" required>
                 </div>
 
-                <div>
+                <div class="fieldset__container">
                   <label for="name">Имя</label>
                   <input type="text" name="name" id="name" required>
 
@@ -136,7 +136,7 @@
                   <input type="text" name="surname" id="surname" required>
                 </div>
 
-                <div>
+                <div class="fieldset__container">
                   <label for="tel">Номер телефона</label>
                   <input type="number" name="tel" id="tel" required>
 
@@ -145,7 +145,7 @@
                 </div>
               </fieldset>
 
-              <button type="submit">Забронировать</button>
+              <button class="button" type="submit">Забронировать</button>
 
               <input type="checkbox" name="data" id="data" required>
               <label for="data">Согласен на обработку данных</label>
@@ -154,8 +154,8 @@
         </section>
 
         <section class="section about" id="about">
-          <div class="content-container">
-            <h2 class="subheading about__subheading">О нас</h2>
+          <div class="container">
+            <h2 class="heading about__heading">О нас</h2>
 
             <div class="about__content">
               <p class="about__text">Для наших гостей мы создали концептуально новое игровое пространство виртуальной реальности в центральной части города.</p>
@@ -174,52 +174,52 @@
         </section>
 
         <section class="section faq">
-          <div class="content-container">
-            <h2 class="subheading faq__subheading">Частые вопросы</h2>
+          <div class="container">
+            <h2 class="heading faq__heading">Частые вопросы</h2>
 
-            <ul class="faq-list">
-              <li class="faq-list__item">Можно ли забронировать комнату онлайн?</li>
-              <li class="faq-list__item">Могут ли мне вернуть деньги за бронь?</li>
-              <li class="faq-list__item">Какая комната самая популярная?</li>
-              <li class="faq-list__item">Как получить VIP карту?</li>
-              <li class="faq-list__item">Какая комната самая популярная?</li>
+            <ul class="faq__list">
+              <li class="faq__item">Можно ли забронировать комнату онлайн?</li>
+              <li class="faq__item">Могут ли мне вернуть деньги за бронь?</li>
+              <li class="faq__item">Какая комната самая популярная?</li>
+              <li class="faq__item">Как получить VIP карту?</li>
+              <li class="faq__item">Какая комната самая популярная?</li>
             </ul>
           </div>
         </section>
       </main>
 
       <footer class="footer" id="contacts">
-        <div class="content-container">
-          <h2 class="subheading footer__subheading">Контакты</h2>
+        <div class="container">
+          <h2 class="heading footer__heading">Контакты</h2>
 
           <address class="address">
-            <p class="address__contacts address__contacts-location">г.Москва
+            <p class="address__contacts address__contacts_type_location">г.Москва
               ул.Аквамарина, 16</p>
-            <p class="address__contacts address__contacts-phone"><a class="address__contacts-link" href="tel:89509302893">8 (950) 930 - 28 - 93</a></p>
+            <p class="address__contacts address__contacts_type_phone"><a class="address__link" href="tel:89509302893">8 (950) 930 - 28 - 93</a></p>
 
-            <p class="address__contacts address__contacts-mail"><a class="address__contacts-link" href="mailto:GameOver@gmail.com">GameOver@gmail.com</a></p>
+            <p class="address__contacts address__contacts_type_mail"><a class="address__link" href="mailto:GameOver@gmail.com">GameOver@gmail.com</a></p>
           </address>
 
-          <nav class="nav-networks">
-            <ul class="nav-networks__list">
-              <li class="nav-networks__item">
-                <a class="nav-networks__link" href="https://vk.com" target="_blank">
-                  <img class="nav-networks__image" src="styles/footer/img/vk.svg" alt="Логотип социальной сети Вконтакте">
+          <nav class="social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link" href="https://vk.com" target="_blank">
+                  <img class="social__image" src="styles/footer/img/vk.svg" alt="Логотип социальной сети Вконтакте">
                 </a>
               </li>
-              <li class="nav-networks__item">
-                <a class="nav-networks__link" href="https://web.telegram.org" target="_blank">
-                  <img class="nav-networks__image" src="styles/footer/img/telegram.svg" alt="Логотип социальной сети Телеграм">
+              <li class="social__item">
+                <a class="social__link" href="https://web.telegram.org" target="_blank">
+                  <img class="social__image" src="styles/footer/img/telegram.svg" alt="Логотип социальной сети Телеграм">
                 </a>
               </li>
-              <li class="nav-networks__item">
-                <a class="nav-networks__link" href="https://ru.pinterest.com/" target="_blank">
-                  <img class="nav-networks__image" src="styles/footer/img/pinterest.svg" alt="Логотип социальной сети Pinterest">
+              <li class="social__item">
+                <a class="social__link" href="https://ru.pinterest.com/" target="_blank">
+                  <img class="social__image" src="styles/footer/img/pinterest.svg" alt="Логотип социальной сети Pinterest">
                 </a>
               </li>
-              <li class="nav-networks__item">
-                <a class="nav-networks__link" href="https://www.stumbleupon.com/" target="_blank">
-                  <img class="nav-networks__image" src="styles/footer/img/stumble-upon.svg" alt="Логотип социальной сети Stumble Upon">
+              <li class="social__item">
+                <a class="social__link" href="https://www.stumbleupon.com/" target="_blank">
+                  <img class="social__image" src="styles/footer/img/stumble-upon.svg" alt="Логотип социальной сети Stumble Upon">
                 </a>
               </li>
             </ul>
