@@ -31,10 +31,10 @@
             <h2 class="heading rooms__heading">Наши залы</h2>
 
             <ul class="rooms__list">
-              <li class="rooms__item rooms__item_type_vibes"><a class="rooms__link" href="vibes.html" target="_blank">80's vibes</a></li>
-              <li class="rooms__item rooms__item_type_starwars"><a class="rooms__link" href="starwars.html" target="_blank">Star wars</a></li>
-              <li class="rooms__item rooms__item_type_wildwest"><a class="rooms__link" href="wildwest.html" target="_blank">Wild west</a></li>
-              <li class="rooms__item rooms__item_type_neon"><a class="rooms__link" href="neon.html" target="_blank">Neon style</a></li>
+              <li class="rooms__item rooms__item_type_vibes"><a class="rooms__link rooms__link_type_vibes" href="vibes.html" target="_blank">80's vibes</a></li>
+              <li class="rooms__item rooms__item_type_starwars"><a class="rooms__link rooms__link_type_starwars" href="starwars.html" target="_blank">Star wars</a></li>
+              <li class="rooms__item rooms__item_type_wildwest"><a class="rooms__link rooms__link_type_wildwest" href="wildwest.html" target="_blank">Wild west</a></li>
+              <li class="rooms__item rooms__item_type_neon"><a class="rooms__link rooms__link_type_neon" href="neon.html" target="_blank">Neon style</a></li>
             </ul>
           </div>
         </section>
@@ -45,7 +45,7 @@
 
             <form class="book__form" action="https://jsonplaceholder.typicode.com/posts" method="post" target="_blank">
               <fieldset class="book__fieldset">
-                <legend class="book__legend">Выберите зал</legend>
+                <!--<legend class="book__legend">Выберите зал</legend>-->
             
                 <input type="radio" name="rooms" value="80s" id="80">
                 <label for="80">80's vibes</label>
@@ -117,14 +117,14 @@
 
                 <div class="fieldset__container">
                   <div class="times">
-                    <label for="date" hidden>Дата</label>
+                    <label for="date">Дата</label>
                     <input type="date" name="date" id="date" required>
 
-                    <label for="time" hidden>Время</label>
+                    <label for="time">Время</label>
                     <input type="time" name="time" id="time" required>
                   </div>
 
-                  <label for="count" hidden>Сколько человек</label>
+                  <label for="count" >Количество человек</label>
                   <input type="number" name="count" id="count" placeholder="Сколько человек" required>
                 </div>
 
@@ -154,22 +154,26 @@
         </section>
 
         <section class="section about" id="about">
-          <div class="container">
+          <div class="container">            
             <h2 class="heading about__heading">О нас</h2>
 
+            <img class="about__image" src="styles/about/img/about.jpg" alt="Изображения VR очков, игровых автоматов, Play Station и караоке" width="600px" height="596px">
+
             <div class="about__content">
-              <p class="about__text">Для наших гостей мы создали концептуально новое игровое пространство виртуальной реальности в центральной части города.</p>
+              <div class="about__text-content">
+                <p class="about__text">Для наших гостей мы создали концептуально новое игровое пространство виртуальной реальности в центральной части города.</p>
   
-              <p class="about__text">Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира.</p>
+                <p class="about__text">Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира.</p>
+              </div>
+
+              <blockquote class="about-blockquote">
+                <p class="about-blockquote__text">GAME OVER &mdash; 
+                  это место незабываемых впечатлений</p>
+  
+                <p class="about-blockquote__text-cite"><cite class="about-blockquote__cite">Аркадий Абакшин, создатель игровой территории GAME OVER</cite></p>
+
+              </blockquote>
             </div>
-
-            <blockquote class="about-blockquote">
-              <p class="about-blockquote__text">GAME OVER &mdash; 
-                это место незабываемых впечатлений</p>
-  
-              <p class="about-blockquote__text-cite"><cite class="about-blockquote__cite">Аркадий Абакшин, создатель игровой территории GAME OVER</cite></p>
-
-            </blockquote>
           </div>
         </section>
 

@@ -67,6 +67,10 @@ iframe {
   padding-bottom: 50px;
 }
 
+.section:first-child {
+  padding-top: 146px;
+}
+
 .heading {
   display: block;
   max-width: 980px;

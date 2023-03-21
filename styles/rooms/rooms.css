@@ -28,9 +28,24 @@
   text-transform: uppercase;
   display: block;
   text-align: center;
-  padding: 275px 477px;
 }
   
+.rooms__link_type_vibes {
+  padding: 315px  403px;
+}
+
+.rooms__link_type_starwars {
+  padding: 315px  382px;
+}
+
+.rooms__link_type_wildwest {
+  padding: 315px  389px;
+}
+
+.rooms__link_type_neon {
+  padding: 315px  366px;
+}
+
 .rooms__item_type_vibes {
   background-image: url("img/80s.jpg");
 }

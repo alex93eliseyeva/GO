@@ -3,3 +3,11 @@
   max-width: 1180px;
   margin: 0;
 }
+
+.fieldset__container {
+  display: inline;
+}
+
+.times {
+  display: inline;
+}
