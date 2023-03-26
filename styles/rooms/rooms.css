@@ -7,15 +7,24 @@
   margin: 0;
   list-style-type: none;
   list-style-position: inside;
-  display: inline-block;
+  display: block;
 }
   
 .rooms__item {
-  margin-bottom: 60px;
+  display: inline-block;
+  vertical-align: top;
+  min-width: 576px;
+  min-height: 350px;
+  margin-right: 20px;
+  margin-bottom: 20px;
   background-size: cover;
 }
   
-.rooms__item:last-child {
+.rooms__item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.rooms__item:nth-child(n+3) {
   margin-bottom: 0;
 }
   
@@ -28,24 +37,9 @@
   text-transform: uppercase;
   display: block;
   text-align: center;
+  padding: 135px 0px;
 }
   
-.rooms__link_type_vibes {
-  padding: 315px  403px;
-}
-
-.rooms__link_type_starwars {
-  padding: 315px  382px;
-}
-
-.rooms__link_type_wildwest {
-  padding: 315px  389px;
-}
-
-.rooms__link_type_neon {
-  padding: 315px  366px;
-}
-
 .rooms__item_type_vibes {
   background-image: url("img/80s.jpg");
 }

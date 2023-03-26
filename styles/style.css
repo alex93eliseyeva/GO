@@ -4,6 +4,7 @@
 @import "book/book.css";
 @import "about/about.css";
 @import "footer/footer.css";
+@import "reviews/reviews.css";
 
 html {
   position: relative;
@@ -92,6 +93,10 @@ iframe {
 
 .book__heading {
   margin-bottom: 50px;
+}
+
+.reviews__heading {
+  margin-bottom: 40px;
 }
 
 .faq__heading {

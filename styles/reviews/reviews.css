@@ -1,0 +1,39 @@
+.reviews__list {
+  padding: 0 100px;
+}
+
+.reviews__item {
+  min-height: 319px;
+  margin-bottom: 50px;
+}
+
+.reviews__item:last-child {
+  margin-bottom: 0;
+}
+
+.userpic-container {
+  max-width: 280px;
+  margin-right: 20px;
+  float: left;
+}
+
+.reviews__text {
+  font-size: 20px;
+  line-height: 28px;
+  margin: 0;
+  padding-top: 52px;
+}
+
+.reviews__image {
+  border-radius: 50%;
+  margin-bottom: 11px;
+}
+
+.reviews__text_type_username {
+  padding-top: 0;
+  text-align: center;
+}
+
+
+
+
