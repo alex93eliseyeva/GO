@@ -4,7 +4,8 @@
 
 .rooms__list {
   padding: 0;
-  margin: 0;
+  margin: -10px;
+  font-size: 0;
   list-style-type: none;
   list-style-position: inside;
   display: block;
@@ -15,17 +16,8 @@
   vertical-align: top;
   min-width: 576px;
   min-height: 350px;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  margin: 10px;
   background-size: cover;
-}
-  
-.rooms__item:nth-child(2n) {
-  margin-right: 0;
-}
-
-.rooms__item:nth-child(n+3) {
-  margin-bottom: 0;
 }
   
 .rooms__link {

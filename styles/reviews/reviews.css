@@ -11,7 +11,7 @@
   margin-bottom: 0;
 }
 
-.userpic-container {
+.reviews__userpic {
   max-width: 280px;
   margin-right: 20px;
   float: left;
@@ -27,6 +27,9 @@
 .reviews__image {
   border-radius: 50%;
   margin-bottom: 11px;
+  height: 280px;
+  object-fit: cover;
+  object-position: top left;
 }
 
 .reviews__text_type_username {
