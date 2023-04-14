@@ -1,13 +1,135 @@
+.book {
+  background-color: #440F51;
+  padding: 80px 0 96px 0;
+}
+.book__fieldset {
+  border: none;
+  margin-bottom: 60px;
+}
+
 .book__form {
   display: block;
   max-width: 1180px;
   margin: 0;
+  padding-bottom: 30px;
+}
+
+.book__legend {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.book-rooms__fieldset {
+  border: none;
+  display: flex;
+  flex-basis: 1180px;
+  justify-content: space-between;
+}
+
+.book-rooms__input {
+  display: none;
+}
+
+.book-rooms__label {
+  display: inline-block;
+  padding: 7px 15px 8px;
+  background-color: #FFFFFF;
+  text-transform: uppercase;
+  border-radius: 8px;
+  max-width: 250px;
+  color: #000000;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.book__fieldset_entertainment {
+  display: flex;
+  flex-basis: 1180px;
+  justify-content: space-around;
+}
+
+.book-options {
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.book-options__legend {
+  margin-bottom: 24px;
+}
+
+.book-options__label {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 22px;
+  line-height: 100%;
+  margin-bottom: 22px;
+}
+
+.book-options__label:last-child {
+  margin-bottom: 0;
+}
+
+.book-options__input {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 12px;
+  width: 27px;
+  height: 27px;
+}
+
+.book-data__fieldset {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
 }
 
 .fieldset__container {
-  display: inline;
+  display: flex;
+  flex-direction: column;
 }
 
-.times {
-  display: inline;
+.fieldset__container_times {
+  display: block;
+  margin-bottom: 36px;
+}
+
+.book-times__input {
+  margin-bottom: 0;
+  min-height: 52px;
+}
+
+.book-data__label {
+  margin-bottom: 6px;
+}
+
+.book-data__input {
+  min-height: 52px;
+  margin-bottom: 14px;
+  font-size: 18px;
+  line-height: 28px;
+  color: #211E1E;
+}
+
+.book-data__input:last-child {
+  margin-bottom: 0;
+}
+
+.book__button {
+  display: block;
+  color: #6C0287;
+  background-color: #FFFFFF;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+  max-width: 300px;
+  border-radius: 10px;
+  padding: 16px 50px;
+  margin: 0 70px 0 auto;
 }

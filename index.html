@@ -40,115 +40,115 @@
         </section>
 
         <section class="section book" id="book">
-          <div class="container">
-            <h2 class="heading book__heading">Забронировать</h2>
+          <div class="container book__container">
+            <h2 class="heading book__heading">Забронировать зал просто</h2>
 
             <form class="book__form" action="https://jsonplaceholder.typicode.com/posts" method="post" target="_blank">
-              <fieldset class="book__fieldset">
-                <!--<legend class="book__legend">Выберите зал</legend>-->
+              <fieldset class="book__fieldset book-rooms">
+                <legend class="book__legend">Выберите зал</legend>
             
-                <input type="radio" name="rooms" value="80s" id="80">
-                <label for="80">80's vibes</label>
+                <fieldset class="book-rooms__fieldset">
+                  <input class="book-rooms__input" type="radio" name="rooms" value="80s" id="80">
+                  <label class="book-rooms__label" for="80">80's vibes</label>
 
-                <input type="radio" name="rooms" value="starWars" id="SW">
-                <label for="SW">star wars</label>
+                  <input class="book-rooms__input" type="radio" name="rooms" value="starWars" id="SW">
+                  <label class="book-rooms__label" for="SW">star wars</label>
 
-                <input type="radio" name="rooms" value="wildWest" id="WW">
-                <label for="WW">wild west</label>
+                  <input class="book-rooms__input" type="radio" name="rooms" value="wildWest" id="WW">
+                  <label class="book-rooms__label" for="WW">wild west</label>
 
-                <input type="radio" name="rooms" value="neonStyle" id="NS">
-                <label for="NS">neon style</label>
+                  <input class="book-rooms__input" type="radio" name="rooms" value="neonStyle" id="NS">
+                  <label class="book-rooms__label" for="NS">neon style</label>
+                </fieldset>
               </fieldset>
 
-              <fieldset class="book__fieldset">
+              <fieldset class="book__fieldset book__fieldset_entertainment">
                 <legend class="book__legend">Собери набор развлечений</legend>
-                <fieldset class="fieldset">
-                  <legend class="book__legend">Приставка</legend>                
-                    <label class="fieldset__label">
-                      <input type="radio" name="console" value="PlayStation">PlayStation
+
+                <fieldset class="book-options book-options__fieldset">
+                  <legend class="book__legend book-options__legend">Приставка</legend>                
+                    <label class="book-options__label">
+                      <input class="book-options__input" type="radio" name="console" value="PlayStation">PlayStation
                     </label>
                 
-                    <label class="fieldset__label">
-                      <input type="radio" name="console" value="segaMegaDrive">Sega Mega Drive
+                    <label class="book-options__label">
+                      <input class="book-options__input"  type="radio" name="console" value="segaMegaDrive">Sega Mega Drive
                     </label>
                 
-                    <label class="fieldset__label">
-                      <input type="radio" name="console" value="xboxOneS">X-box One S
+                    <label class="book-options__label">
+                      <input class="book-options__input"  type="radio" name="console" value="xboxOneS">X-box One S
                     </label>
                 
-                    <label class="fieldset__label">
-                      <input type="radio" name="console" value="dendy">Dendy
+                    <label class="book-options__label">
+                      <input class="book-options__input"  type="radio" name="console" value="dendy">Dendy
                     </label>
                 </fieldset>
 
-                <fieldset class="fieldset">
-                  <legend class="book__legend">Настольные игры</legend>                
-                    <label class="fieldset__label">
-                      <input type="checkbox" name="game" value="jenga">Jenga
+                <fieldset class="book-options book-options__fieldset">
+                  <legend class="book__legend book-options__legend">Настольные игры</legend>                
+                    <label class="book-options__label">
+                      <input class="book-options__input"  type="checkbox" name="game" value="jenga">Jenga
                     </label>
                 
-                    <label class="fieldset__label">
-                      <input type="checkbox" name="game" value="monopoly">Monopoly
+                    <label class="book-options__label">
+                      <input class="book-options__input"  type="checkbox" name="game" value="monopoly">Monopoly
                     </label>
                   
-                    <label class="fieldset__label">
-                      <input type="checkbox" name="game" value="manchkin">Манчкин
+                    <label class="book-options__label">
+                      <input class="book-options__input"  type="checkbox" name="game" value="manchkin">Манчкин
                     </label>
                   
-                    <label class="fieldset__label">
-                      <input type="checkbox" name="game" value="alias">Alias
+                    <label class="book-options__label">
+                      <input class="book-options__input"  type="checkbox" name="game" value="alias">Alias
                     </label>
                 </fieldset>
 
-                <fieldset class="fieldset">
-                  <legend class="book__legend">Дополнительно</legend>              
-                    <label class="fieldset__label">
-                      <input type="checkbox" name="extra" value="karaoke">Караоке
+                <fieldset class="book-options book-options__fieldset">
+                  <legend class="book__legend book-options__legend">Дополнительно</legend>              
+                    <label class="book-options__label">
+                      <input class="book-options__input"  type="checkbox" name="extra" value="karaoke">Караоке
                     </label>
                   
-                    <label class="fieldset__label">
-                      <input type="checkbox" name="extra" value="vr">VR
+                    <label class="book-options__label">
+                      <input class="book-options__input"  type="checkbox" name="extra" value="vr">VR
                     </label>
                 </fieldset>
               </fieldset>
 
-              <fieldset class="fieldset">
+              <fieldset class="book__fieldset book-data__fieldset">
                 <legend class="book__legend">Выбери дату и время</legend>
 
                 <div class="fieldset__container">
-                  <div class="times">
-                    <label for="date">Дата</label>
-                    <input type="date" name="date" id="date" required>
+                  <div class="fieldset__container_times">
+                    <label class="book-times__label" for="date"></label>
+                    <input class="book-times__input" type="date" name="date" id="date" required>
 
-                    <label for="time">Время</label>
-                    <input type="time" name="time" id="time" required>
+                    <label class="book-times__label" for="time"></label>
+                    <input class="book-times__input" type="time" name="time" id="time" required>
                   </div>
 
-                  <label for="count" >Количество человек</label>
-                  <input type="number" name="count" id="count" placeholder="Сколько человек" required>
+                  <label for="count"></label>
+                  <input class="book-data__input" type="number" name="count" id="count" placeholder="Сколько человек" required>
                 </div>
 
                 <div class="fieldset__container">
-                  <label for="name">Имя</label>
-                  <input type="text" name="name" id="name" required>
+                  <label class="book-data__label" for="name">Имя</label>
+                  <input class="book-data__input" type="text" name="name" id="name" required>
 
-                  <label for="surname">Фамилия</label>
-                  <input type="text" name="surname" id="surname" required>
+                  <label class="book-data__label" for="surname">Фамилия</label>
+                  <input class="book-data__input" type="text" name="surname" id="surname" required>
                 </div>
 
                 <div class="fieldset__container">
-                  <label for="tel">Номер телефона</label>
-                  <input type="number" name="tel" id="tel" required>
+                  <label class="book-data__label" for="tel">Номер телефона</label>
+                  <input class="book-data__input" type="number" name="tel" id="tel" required>
 
-                  <input type="checkbox" name="confirm" id="confirm">
-                  <label for="confirm">Я старше 18 лет</label>
+                  <label class="book-data__label" for="email">E-mail</label>
+                  <input class="book-data__input" type="text" name="email" id="email">
                 </div>
               </fieldset>
 
-              <button class="button" type="submit">Забронировать</button>
-
-              <input type="checkbox" name="data" id="data" required>
-              <label for="data">Согласен на обработку данных</label>
+              <button class="book__button" type="submit">Забронировать</button>
             </form>
           </div>
         </section>
