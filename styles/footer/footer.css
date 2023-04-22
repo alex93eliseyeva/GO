@@ -1,8 +1,14 @@
 .footer {
-  padding-bottom: 101px;
+  background: linear-gradient(#1B1A1B, #370A37);
+  padding-bottom: 10px;
   padding-top: 50px;
 }
-  
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .address {
   margin-bottom: 39px;
 }
@@ -65,4 +71,26 @@
 .social__image {
   width: 48px;
   height: 48px;
+}
+
+.footer__image {
+  margin-bottom: 156px;
+}
+
+.wrapper-developer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__text {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.footer__developer-item {
+  margin-bottom: 6px;
+}
+
+.footer__developer-item:last-child {
+  margin-bottom: 0;
 }

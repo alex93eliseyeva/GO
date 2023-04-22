@@ -1,4 +1,6 @@
+@import "header/header.css";
 @import "hero-section/hero-section.css";
+@import "features/features.css";
 @import "faq/faq.css";
 @import "rooms/rooms.css";
 @import "book/book.css";
@@ -70,7 +72,11 @@ iframe {
 }
 
 .section:first-child {
-  padding-top: 146px;
+  padding-top: 30px;
+}
+
+.header {
+  padding-bottom: 20px;
 }
 
 .heading {
@@ -82,6 +88,11 @@ iframe {
   line-height: 50px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.features__heading {
+  margin-bottom: 41px;
+  text-align: center;
 }
 
 .rooms__heading {

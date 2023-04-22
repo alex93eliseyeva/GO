@@ -8,6 +8,7 @@
   background-position: bottom right 30px;
   background-size: 675px 762px;
   min-height: 823px;
+  position: relative;
 }
   
 .hero-section__heading {
@@ -22,6 +23,63 @@
   font-size: 28px;
   font-weight: 400;
   line-height: 50px;
-  margin: 0 0 0 100px;
+  margin: 0 0 60px 100px;
 }
-  
+
+.hero-section__wrapper {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 150px;
+  align-items: baseline;
+}
+
+.feature-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 193px;
+}
+
+.hero-section__feature {
+  line-height: 100%;
+  font-weight: 900;
+  color: #CD06FF;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.hero-section__feature_rooms {
+  font-size: 100px;
+}
+
+.hero-section__feature_new {
+  font-size: 75px;
+  text-transform: uppercase;
+}
+
+.hero-section__feature_text {
+  font-size: 30px;
+  line-height: 100%;
+  text-align: center;
+}
+
+.hero-section__link {
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  padding: 25px 69px;
+  background-color: #6C0287;
+  border-radius: 10px;
+}
+
+.hero-section__button {
+  background-image: url(img/down.svg);
+  width: 97px;
+  min-height: 97px;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  left: 570px;
+  bottom: 90px;
+}

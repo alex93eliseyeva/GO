@@ -17,12 +17,87 @@
   </head>
 
   <body>
-      <main class="main">
-        <section class="section hero-section">
-          <div class="container hero-section__container">
-            <h1 class="hero-section__heading">GAME OVER</h1>
+    <header class="header section">
+      <div class="container header__container">
+        <img class="header__logo" src="img/logo.svg" alt="Логотип компании Game Over">
 
-            <p class="hero-section__subtitle">Новый формат игры и отдыха</p>
+        <ul class="header__list">
+          <li class="header__item"><a href="#rooms" class="header__link">Залы</a></li>
+          <li class="header__item"><a href="#about" class="header__link">О нас</a></li>
+          <li class="header__item"><a href="#book" class="header__link">Бронь</a></li>
+          <li class="header__item"><a href="#reviews" class="header__link">Отзывы</a></li>
+          <li class="header__item"><a href="#contacts" class="header__link">Контакты</a></li>
+        </ul>
+
+        <button class="header__button">Заказать звонок</button>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="section hero-section">
+        <div class="container hero-section__container">
+          <h1 class="hero-section__heading">GAME OVER</h1>
+
+          <p class="hero-section__subtitle">Новый формат игры и отдыха</p>
+
+          <div class="hero-section__wrapper">
+            <div class="feature-wrapper">
+              <p class="hero-section__feature hero-section__feature_rooms">4</p>
+              <p class="hero-section__feature_text">Тематических зала</p>
+            </div>
+            <div class="feature-wrapper">
+              <p class="hero-section__feature hero-section__feature_new">new</p>
+              <p class="hero-section__feature_text">Новейшая аппаратура</p>
+            </div>
+          </div>
+
+          <a class="hero-section__link" href="#book">Забронировать</a>
+
+          <button class="hero-section__button"></button>
+        </div>
+      </section>
+
+      <section class="section features">
+        <div class="container">
+          <h2 class="heading features__heading">У нас есть всё для классного<br>отдыха с друзьями</h2>
+
+          <ul class="features__list">
+            <li class="features__item">
+                <figure class="features__figure">
+                  <img class="features__image" src="styles/features/img/vr.jpg" alt="VR очки">
+                </figure>
+              </li>
+              <li class="features__item">
+                <figure class="features__figure">
+                  <img class="features__image" src="styles/features/img/audio.jpg" alt="Аудио-система">
+                  <figcaption class="features__figcaption">Аудио-система 5.1 с отличным звуком</figcaption>
+                </figure>
+              </li>
+              <li class="features__item">
+                <figure class="features__figure">
+                  <img class="features__image" src="styles/features/img/micro.jpg" alt="Караоке">
+                  <figcaption class="features__figcaption">Караоке (4 микрофона)</figcaption>
+                </figure>
+              </li>
+              <li class="features__item">
+                <figure class="features__figure">
+                  <img class="features__image" src="styles/features/img/game.jpg" alt="Настольные игры">
+                  <figcaption class="features__figcaption">Настольные игры</figcaption>
+                </figure>
+              </li>
+              <li class="features__item">
+                <figure class="features__figure">
+                  <img class="features__image" src="styles/features/img/netflix.jpg" alt="Киносервис Netflix">
+                  <figcaption class="features__figcaption">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</figcaption>
+                </figure>
+              </li>
+              <li class="features__item">
+                <figure class="features__figure">
+                  <img class="features__image" src="styles/features/img/sony.jpg" alt="Приставка PlayStation">
+                  <figcaption class="features__figcaption">PlayStation 5</figcaption>
+                </figure>
+              </li>
+            </ul>
           </div>
         </section>
 
@@ -118,33 +193,35 @@
               <fieldset class="book__fieldset book-data__fieldset">
                 <legend class="book__legend">Выбери дату и время</legend>
 
-                <div class="fieldset__container">
-                  <div class="fieldset__container_times">
-                    <label class="book-times__label" for="date"></label>
-                    <input class="book-times__input" type="date" name="date" id="date" required>
+                <div class="book-data__wrapper">
+                  <div class="fieldset__container">
+                    <div class="fieldset__container_times">
+                      <label class="book-data__label" for="date"></label>
+                      <input class="book-data__input book__input_times" type="date" name="date" id="date" required>
 
-                    <label class="book-times__label" for="time"></label>
-                    <input class="book-times__input" type="time" name="time" id="time" required>
+                      <label class="book-data__label" for="time"></label>
+                      <input class="book-data__input book__input_times" type="time" name="time" id="time" required>
+                    </div>
+
+                    <label class="book-data__label" for="count"></label>
+                    <input class="book-data__input" type="number" name="count" id="count" placeholder="Сколько человек" required>
                   </div>
 
-                  <label for="count"></label>
-                  <input class="book-data__input" type="number" name="count" id="count" placeholder="Сколько человек" required>
-                </div>
+                  <div class="fieldset__container">
+                    <label class="book-data__label" for="name">Имя</label>
+                    <input class="book-data__input" type="text" name="name" id="name" required>
 
-                <div class="fieldset__container">
-                  <label class="book-data__label" for="name">Имя</label>
-                  <input class="book-data__input" type="text" name="name" id="name" required>
+                    <label class="book-data__label" for="surname">Фамилия</label>
+                    <input class="book-data__input" type="text" name="surname" id="surname" required>
+                  </div>
 
-                  <label class="book-data__label" for="surname">Фамилия</label>
-                  <input class="book-data__input" type="text" name="surname" id="surname" required>
-                </div>
+                  <div class="fieldset__container">
+                    <label class="book-data__label" for="tel">Номер телефона</label>
+                    <input class="book-data__input" type="number" name="tel" id="tel" required>
 
-                <div class="fieldset__container">
-                  <label class="book-data__label" for="tel">Номер телефона</label>
-                  <input class="book-data__input" type="number" name="tel" id="tel" required>
-
-                  <label class="book-data__label" for="email">E-mail</label>
-                  <input class="book-data__input" type="text" name="email" id="email">
+                    <label class="book-data__label" for="email">E-mail</label>
+                    <input class="book-data__input" type="text" name="email" id="email">
+                  </div>
                 </div>
               </fieldset>
 
@@ -231,38 +308,53 @@
         <div class="container">
           <h2 class="heading footer__heading">Контакты</h2>
 
-          <address class="address">
-            <p class="address__contacts address__contacts_type_location">г.Москва
-              ул.Аквамарина, 16</p>
-            <p class="address__contacts address__contacts_type_phone"><a class="address__link" href="tel:89509302893">8 (950) 930 - 28 - 93</a></p>
+          <div class="footer-container">
+            <div class="wrapper-contacts">
+              <address class="address">
+                <p class="address__contacts address__contacts_type_location">г.Москва
+                ул.Аквамарина, 16</p>
+                <p class="address__contacts address__contacts_type_phone"><a class="address__link" href="tel:89509302893">8 (950) 930 - 28 - 93</a></p>
 
-            <p class="address__contacts address__contacts_type_mail"><a class="address__link" href="mailto:GameOver@gmail.com">GameOver@gmail.com</a></p>
-          </address>
+                <p class="address__contacts address__contacts_type_mail"><a class="address__link" href="mailto:GameOver@gmail.com">GameOver@gmail.com</a></p>
+              </address>
 
-          <nav class="social">
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link" href="https://vk.com" target="_blank">
-                  <img class="social__image" src="styles/footer/img/vk.svg" alt="Логотип социальной сети Вконтакте">
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link" href="https://web.telegram.org" target="_blank">
-                  <img class="social__image" src="styles/footer/img/telegram.svg" alt="Логотип социальной сети Телеграм">
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link" href="https://ru.pinterest.com/" target="_blank">
-                  <img class="social__image" src="styles/footer/img/pinterest.svg" alt="Логотип социальной сети Pinterest">
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link" href="https://www.stumbleupon.com/" target="_blank">
-                  <img class="social__image" src="styles/footer/img/stumble-upon.svg" alt="Логотип социальной сети Stumble Upon">
-                </a>
-              </li>
+              <nav class="social">
+                <ul class="social__list">
+                  <li class="social__item">
+                    <a class="social__link" href="https://vk.com" target="_blank">
+                      <img class="social__image" src="styles/footer/img/vk.svg" alt="Логотип социальной сети Вконтакте">
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link" href="https://web.telegram.org" target="_blank">
+                      <img class="social__image" src="styles/footer/img/telegram.svg" alt="Логотип социальной сети Телеграм">
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link" href="https://ru.pinterest.com/" target="_blank">
+                      <img class="social__image" src="styles/footer/img/pinterest.svg" alt="Логотип социальной сети Pinterest">
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link" href="https://www.stumbleupon.com/" target="_blank">
+                      <img class="social__image" src="styles/footer/img/stumble-upon.svg" alt="Логотип социальной сети Stumble Upon">
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <img class="footer__image" src="styles/footer/img/map.jpg" alt="Карта с расположением компании">
+          </div>
+
+          <div class="wrapper-developer">
+            <p class="footer__copyright footer__text">&#169; Game Over, 2022</p>
+
+            <ul class="footer__developer-list">
+              <li class="footer__developer-item footer__text">Design by Anastasia Ilina</li>
+              <li class="footer__developer-item footer__text">ilina9825@gmail.com</li>
             </ul>
-          </nav>
+          </div>
         </div>
       </footer>
   </body>

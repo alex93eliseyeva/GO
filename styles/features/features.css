@@ -1,0 +1,25 @@
+.features__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 20px;
+}
+
+.features__item {
+  flex-basis: 380px;
+  min-height: 228px;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  padding: 166px 40px auto;
+}
+
+.features__figure {
+    position: relative;
+}
+
+.features__figcaption {
+  position:absolute;
+  left: 40px;
+  top: 166px;
+  max-width: 300px;
+}
