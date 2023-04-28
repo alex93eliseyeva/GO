@@ -21,15 +21,17 @@
       <div class="container header__container">
         <img class="header__logo" src="img/logo.svg" alt="Логотип компании Game Over">
 
-        <ul class="header__list">
-          <li class="header__item"><a href="#rooms" class="header__link">Залы</a></li>
-          <li class="header__item"><a href="#about" class="header__link">О нас</a></li>
-          <li class="header__item"><a href="#book" class="header__link">Бронь</a></li>
-          <li class="header__item"><a href="#reviews" class="header__link">Отзывы</a></li>
-          <li class="header__item"><a href="#contacts" class="header__link">Контакты</a></li>
-        </ul>
+        <nav class="header__navigation">
+          <ul class="header__list">
+            <li class="header__item"><a href="#rooms" class="header__link">Залы</a></li>
+            <li class="header__item"><a href="#about" class="header__link">О нас</a></li>
+            <li class="header__item"><a href="#book" class="header__link">Бронь</a></li>
+            <li class="header__item"><a href="#reviews" class="header__link">Отзывы</a></li>
+            <li class="header__item"><a href="#contacts" class="header__link">Контакты</a></li>
+          </ul>
+        </nav>
 
-        <button class="header__button">Заказать звонок</button>
+        <button class="header__button" type="button">Заказать звонок</button>
       </div>
     </header>
 
@@ -42,60 +44,43 @@
 
           <div class="hero-section__wrapper">
             <div class="feature-wrapper">
-              <p class="hero-section__feature hero-section__feature_rooms">4</p>
-              <p class="hero-section__feature_text">Тематических зала</p>
+              <p class="hero-section__feature hero-section__feature_type_rooms">4</p>
+              <p class="hero-section__feature-text">Тематических зала</p>
             </div>
             <div class="feature-wrapper">
-              <p class="hero-section__feature hero-section__feature_new">new</p>
-              <p class="hero-section__feature_text">Новейшая аппаратура</p>
+              <p class="hero-section__feature hero-section__feature_type_new">new</p>
+              <p class="hero-section__feature-text">Новейшая аппаратура</p>
             </div>
           </div>
 
           <a class="hero-section__link" href="#book">Забронировать</a>
 
-          <button class="hero-section__button"></button>
+          <a class="hero-section__link-down" href="#features"></a>
         </div>
       </section>
 
-      <section class="section features">
+      <section class="section features" id="features">
         <div class="container">
           <h2 class="heading features__heading">У нас есть всё для классного<br>отдыха с друзьями</h2>
 
           <ul class="features__list">
-            <li class="features__item">
-                <figure class="features__figure">
-                  <img class="features__image" src="styles/features/img/vr.jpg" alt="VR очки">
-                </figure>
+            <li class="features__item features__item_type_vr">
+                <p class="features__text">VR очки</p>
               </li>
-              <li class="features__item">
-                <figure class="features__figure">
-                  <img class="features__image" src="styles/features/img/audio.jpg" alt="Аудио-система">
-                  <figcaption class="features__figcaption">Аудио-система 5.1 с отличным звуком</figcaption>
-                </figure>
+              <li class="features__item features__item_type_audio">
+                <p class="features__text">Аудио-система 5.1 с отличным звуком</p>
               </li>
-              <li class="features__item">
-                <figure class="features__figure">
-                  <img class="features__image" src="styles/features/img/micro.jpg" alt="Караоке">
-                  <figcaption class="features__figcaption">Караоке (4 микрофона)</figcaption>
-                </figure>
+              <li class="features__item features__item_type_karaoke">
+                <p class="features__text">Караоке (4 микрофона)</p>
               </li>
-              <li class="features__item">
-                <figure class="features__figure">
-                  <img class="features__image" src="styles/features/img/game.jpg" alt="Настольные игры">
-                  <figcaption class="features__figcaption">Настольные игры</figcaption>
-                </figure>
+              <li class="features__item features__item_type_boardgames">
+                <p class="features__text">Настольные игры</p>
               </li>
-              <li class="features__item">
-                <figure class="features__figure">
-                  <img class="features__image" src="styles/features/img/netflix.jpg" alt="Киносервис Netflix">
-                  <figcaption class="features__figcaption">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</figcaption>
-                </figure>
+              <li class="features__item features__item_type_netflix">
+                <p class="features__text">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</p>
               </li>
-              <li class="features__item">
-                <figure class="features__figure">
-                  <img class="features__image" src="styles/features/img/sony.jpg" alt="Приставка PlayStation">
-                  <figcaption class="features__figcaption">PlayStation 5</figcaption>
-                </figure>
+              <li class="features__item features__item_type_ps">
+                <p class="features__text">PlayStation 5</p>
               </li>
             </ul>
           </div>
@@ -137,10 +122,10 @@
                 </fieldset>
               </fieldset>
 
-              <fieldset class="book__fieldset book__fieldset_entertainment">
+              <fieldset class="book__fieldset book-entertainment">
                 <legend class="book__legend">Собери набор развлечений</legend>
 
-                <fieldset class="book-options book-options__fieldset">
+                <fieldset class="book-options book-options_type_console">
                   <legend class="book__legend book-options__legend">Приставка</legend>                
                     <label class="book-options__label">
                       <input class="book-options__input" type="radio" name="console" value="PlayStation">PlayStation
@@ -159,7 +144,7 @@
                     </label>
                 </fieldset>
 
-                <fieldset class="book-options book-options__fieldset">
+                <fieldset class="book-options book-options_type_games">
                   <legend class="book__legend book-options__legend">Настольные игры</legend>                
                     <label class="book-options__label">
                       <input class="book-options__input"  type="checkbox" name="game" value="jenga">Jenga
@@ -178,7 +163,7 @@
                     </label>
                 </fieldset>
 
-                <fieldset class="book-options book-options__fieldset">
+                <fieldset class="book-options book-options_type_extra">
                   <legend class="book__legend book-options__legend">Дополнительно</legend>              
                     <label class="book-options__label">
                       <input class="book-options__input"  type="checkbox" name="extra" value="karaoke">Караоке
@@ -190,24 +175,21 @@
                 </fieldset>
               </fieldset>
 
-              <fieldset class="book__fieldset book-data__fieldset">
+              <fieldset class="book__fieldset book-data">
                 <legend class="book__legend">Выбери дату и время</legend>
 
                 <div class="book-data__wrapper">
-                  <div class="fieldset__container">
-                    <div class="fieldset__container_times">
-                      <label class="book-data__label" for="date"></label>
-                      <input class="book-data__input book__input_times" type="date" name="date" id="date" required>
+                  <div class="book-data__container book-data__container_type_times">
+                    <div class="book-data__container-times">
+                      <input class="book-data__input book-data__input_times" type="date" name="date" id="date" required>
 
-                      <label class="book-data__label" for="time"></label>
-                      <input class="book-data__input book__input_times" type="time" name="time" id="time" required>
+                      <input class="book-data__input book-data__input_times" type="time" name="time" id="time" required>
                     </div>
 
-                    <label class="book-data__label" for="count"></label>
                     <input class="book-data__input" type="number" name="count" id="count" placeholder="Сколько человек" required>
                   </div>
 
-                  <div class="fieldset__container">
+                  <div class="book-data__container book-data__container_type_name">
                     <label class="book-data__label" for="name">Имя</label>
                     <input class="book-data__input" type="text" name="name" id="name" required>
 
@@ -215,17 +197,17 @@
                     <input class="book-data__input" type="text" name="surname" id="surname" required>
                   </div>
 
-                  <div class="fieldset__container">
-                    <label class="book-data__label" for="tel">Номер телефона</label>
+                  <div class="book-data__container book-data__container_type_contacts">
+                    <label class="book-data__label" for="tel">Телефон</label>
                     <input class="book-data__input" type="number" name="tel" id="tel" required>
 
                     <label class="book-data__label" for="email">E-mail</label>
                     <input class="book-data__input" type="text" name="email" id="email">
                   </div>
+
+                  <button class="book__button" type="submit">Забронировать</button>
                 </div>
               </fieldset>
-
-              <button class="book__button" type="submit">Забронировать</button>
             </form>
           </div>
         </section>
@@ -321,24 +303,16 @@
               <nav class="social">
                 <ul class="social__list">
                   <li class="social__item">
-                    <a class="social__link" href="https://vk.com" target="_blank">
-                      <img class="social__image" src="styles/footer/img/vk.svg" alt="Логотип социальной сети Вконтакте">
-                    </a>
+                    <a class="social__link social__link_type_vk" href="https://vk.com" target="_blank"></a>
                   </li>
                   <li class="social__item">
-                    <a class="social__link" href="https://web.telegram.org" target="_blank">
-                      <img class="social__image" src="styles/footer/img/telegram.svg" alt="Логотип социальной сети Телеграм">
-                    </a>
+                    <a class="social__link social__link_type_telegram" href="https://web.telegram.org" target="_blank"></a>
                   </li>
                   <li class="social__item">
-                    <a class="social__link" href="https://ru.pinterest.com/" target="_blank">
-                      <img class="social__image" src="styles/footer/img/pinterest.svg" alt="Логотип социальной сети Pinterest">
-                    </a>
+                    <a class="social__link social__link_type_pinterest" href="https://ru.pinterest.com/" target="_blank"></a>
                   </li>
                   <li class="social__item">
-                    <a class="social__link" href="https://www.stumbleupon.com/" target="_blank">
-                      <img class="social__image" src="styles/footer/img/stumble-upon.svg" alt="Логотип социальной сети Stumble Upon">
-                    </a>
+                    <a class="social__link social__link_type_stumble-upon" href="https://www.stumbleupon.com/" target="_blank"></a>
                   </li>
                 </ul>
               </nav>

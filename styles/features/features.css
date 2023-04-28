@@ -7,19 +7,38 @@
 .features__item {
   flex-basis: 380px;
   min-height: 228px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.features__item_type_vr {
+  background-image: url("img/vr.jpg");
+}
+
+.features__item_type_audio {
+  background-image: url("img/audio.jpg");
+}
+
+.features__item_type_karaoke {
+  background-image: url("img/karaoke.jpg");
+}
+
+.features__item_type_boardgames {
+  background-image: url("img/game.jpg");
+}
+
+.features__item_type_netflix {
+  background-image: url("img/netflix.jpg");
+}
+
+.features__item_type_ps {
+  background-image: url("img/sony.jpg");
+}
+
+.features__text {
+  display: block;
+  padding: 166px 40px 0;
   font-size: 20px;
   line-height: 28px;
   font-weight: 700;
-  padding: 166px 40px auto;
-}
-
-.features__figure {
-    position: relative;
-}
-
-.features__figcaption {
-  position:absolute;
-  left: 40px;
-  top: 166px;
-  max-width: 300px;
 }

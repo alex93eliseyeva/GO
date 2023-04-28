@@ -8,7 +8,7 @@
 }
 
 .book__fieldset:last-child {
-  margin-bottom: 40px;
+  margin-bottom: 0;
 }
 
 .book__form {
@@ -51,20 +51,52 @@
   text-align: center;
 }
 
-.book__fieldset_entertainment {
+.book-rooms__label:hover {
+  background-color: #EADEED;
+  box-shadow: 3px solid #640AA3;
+}
+
+.book-rooms__label:focus {
+  background-color: #FFFFFF;
+  outline: 3px solid #640AA3;
+}
+
+.book-rooms__label:active {
+  color: #FFFFFF;
+  background-color: #6C0287;
+  box-shadow: 3px solid #FFFFFF;
+}
+
+.book-entertainment {
+  border: none;
+  padding: 0 0 0 100px;
   display: flex;
   flex-basis: 1180px;
-  justify-content: space-around;
+  gap: 100px;
 }
 
 .book-options {
   border: none;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+}
+
+.book-options_type_console {
+  flex-basis: 280px;
+}
+
+.book-options_type_games {
+  flex-basis: 300px;
+}
+
+.book-options_type_extra {
+  flex-basis: 300px;
 }
 
 .book-options__legend {
   margin-bottom: 24px;
+  text-align: start;
 }
 
 .book-options__label {
@@ -87,31 +119,52 @@
   height: 27px;
 }
 
-.book-data__fieldset {
-  display: flex;
-  justify-content: space-around;
-  flex-basis: 1180px;
+.book-options__input:focus {
+  outline: 1px solid #CD06FF;
+  padding: 3px;
+}
+
+.book-data {
+  border: none;
   margin-bottom: 40px;
+  padding: 0 100px 0;
 }
 
 .book-data__wrapper {
   display: flex;
-  column-gap: 50px;
+  flex-basis: 1180px;
+  gap: 40px 50px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
-.fieldset__container {
+.book-data__container {
   display: flex;
   flex-direction: column;
+  flex-shrink: 0;
+  justify-content: flex-end;
 }
 
-.fieldset__container_times {
-  flex-direction: row;
+.book-data__container_type_times {
+  flex-basis: 300px;
+  flex-shrink: 0;
+}
+
+.book-data__container_type_name {
+  flex-basis: 280px;
+  flex-shrink: 0;
+}
+
+.book-data__container_type_contacts {
+  flex-basis: 300px;
+  flex-shrink: 0;
+}
+
+
+.book-data__container-times {
   margin-bottom: 36px;
-  gap: 32px;
-}
-
-.book-data__label {
-  margin-bottom: 6px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .book-data__input {
@@ -121,11 +174,21 @@
   padding: 12px 20px;
   line-height: 28px;
   color: #211E1E;
-  max-width: 300px;
 }
 
 .book-data__input:last-child {
   margin-bottom: 0;
+}
+
+.book-data__input_times {
+  max-width: 134px;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.book-data__input:focus {
+  outline: none;
+  border: 2px solid #CD06FF;
 }
 
 .book__button {
@@ -139,5 +202,18 @@
   max-width: 300px;
   border-radius: 10px;
   padding: 16px 50px;
-  margin: 0 70px 0 auto;
+}
+
+.book__button:hover {
+  background-color: #EADEED;
+  box-shadow: 3px solid #6C0287;
+}
+
+.book__button:focus {
+  background-color: #FFFFFF;
+  outline: 3px solid #6C0287;
+}
+
+.book__button:active {
+  background-color: #EADEED;
 }

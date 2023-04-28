@@ -37,28 +37,29 @@
   display: flex;
   flex-direction: column;
   flex-basis: 193px;
-}
-
-.hero-section__feature {
-  line-height: 100%;
-  font-weight: 900;
-  color: #CD06FF;
-  margin-bottom: 20px;
+  gap: 20px;
   text-align: center;
 }
 
-.hero-section__feature_rooms {
-  font-size: 100px;
+.hero-section__feature {
+  font-weight: 900;
+  color: #CD06FF;
 }
 
-.hero-section__feature_new {
+.hero-section__feature_type_rooms {
+  font-size: 100px;
+  line-height: 141px;
+}
+
+.hero-section__feature_type_new {
   font-size: 75px;
+  line-height: 106px;
   text-transform: uppercase;
 }
 
-.hero-section__feature_text {
+.hero-section__feature-text {
   font-size: 30px;
-  line-height: 100%;
+  line-height: calc(34 / 30);
   text-align: center;
 }
 
@@ -71,15 +72,40 @@
   padding: 25px 69px;
   background-color: #6C0287;
   border-radius: 10px;
+  box-shadow:0 0 20px #6C0287;
 }
 
-.hero-section__button {
-  background-image: url(img/down.svg);
+.hero-section__link:hover, .hero-section__link:focus {
+  background-color: #840AA3;
+  outline: none;
+}
+
+.hero-section__link:active {
+  background-color: #640AA3;
+}
+
+.hero-section__link-down {
+  background-image: url("img/down.svg");
   width: 97px;
   min-height: 97px;
   background-color: transparent;
   border: none;
   position: absolute;
-  left: 570px;
+  left: 50%;
+  transform: translateX(-50%);
   bottom: 90px;
 }
+
+.hero-section__link-down:hover {
+  background-image: url("img/down_hover.svg");
+}
+
+.hero-section__link-down:focus {
+  background-image: url("img/down_focus.svg");
+  outline: 1px solid #CD06FF;
+}
+
+.hero-section__link-down:active {
+  background-image: url("img/down_active.svg");
+}
+

@@ -68,9 +68,76 @@
   margin-right: 0;
 }
   
-.social__image {
-  width: 48px;
-  height: 48px;
+.social__link_type_vk {
+  background-image: url("img/vk.svg");
+}
+
+.social__link_type_vk:hover {
+  background-image: url("img/vk_hover.svg");
+}
+
+.social__link_type_vk:focus {
+  background-image: url("img/vk_hover.svg");
+  outline: 1px solid #CD06FF;
+}
+
+.social__link_type_vk:active {
+  background-image: url("img/vk_active.svg");
+  outline: none;
+}
+
+.social__link_type_telegram {
+  background-image: url("img/telegram.svg");
+}
+
+.social__link_type_telegram:hover {
+  background-image: url("img/telegram_hover.svg");
+}
+
+.social__link_type_telegram:focus {
+  background-image: url("img/telegram_hover.svg");
+  outline: 1px solid #CD06FF;
+}
+
+.social__link_type_telegram:active {
+  background-image: url("img/telegram_active.svg");
+  outline: none;
+}
+
+.social__link_type_pinterest {
+  background-image: url("img/pinterest.svg");
+}
+
+.social__link_type_pinterest:hover {
+  background-image: url("img/pinterest_hover.svg");
+}
+
+.social__link_type_pinterest:focus {
+  background-image: url("img/pinterest_hover.svg");
+  outline: 1px solid #CD06FF;
+}
+
+.social__link_type_pinterest:active {
+  background-image: url("img/pinterest_active.svg");
+  outline: none;
+}
+
+.social__link_type_stumble-upon {
+  background-image: url("img/stumble-upon.svg");
+}
+
+.social__link_type_stumble-upon:hover {
+  background-image: url("img/stumble-upon_hover.svg");
+}
+
+.social__link_type_stumble-upon:focus {
+  background-image: url("img/stumble-upon_hover.svg");
+  outline: 1px solid #CD06FF;
+}
+
+.social__link_type_stumble-upon:active {
+  background-image: url("img/stumble-upon_active.svg");
+  outline: none;
 }
 
 .footer__image {
