@@ -31,6 +31,11 @@
   text-align: center;
   padding: 135px 0px;
 }
+
+.rooms__link:hover {
+  color: #EADEED;
+  transition-duration: 0.2s;
+}
   
 .rooms__item_type_vibes {
   background-image: url("img/80s.jpg");

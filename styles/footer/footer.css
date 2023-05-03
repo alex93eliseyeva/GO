@@ -35,6 +35,11 @@
   text-decoration: none;
   color: #FFFFFF;
 }
+
+.address__link:hover {
+  color: #EADEED;
+  transition-duration: 0.2s;
+}
   
 .address__contacts_type_phone {
   margin-bottom: 11px;
@@ -62,6 +67,7 @@
   display: block;
   width: 48px;
   height: 48px;
+  background-size: contain;
 }
   
 .social__item:last-child {
@@ -74,16 +80,19 @@
 
 .social__link_type_vk:hover {
   background-image: url("img/vk_hover.svg");
+  transition-duration: 0.2s;
 }
 
 .social__link_type_vk:focus {
   background-image: url("img/vk_hover.svg");
   outline: 1px solid #CD06FF;
+  transition-duration: 0.2s;
 }
 
 .social__link_type_vk:active {
   background-image: url("img/vk_active.svg");
   outline: none;
+  transition-duration: 0.2s;
 }
 
 .social__link_type_telegram {
@@ -92,16 +101,19 @@
 
 .social__link_type_telegram:hover {
   background-image: url("img/telegram_hover.svg");
+  transition-duration: 0.2s;
 }
 
 .social__link_type_telegram:focus {
   background-image: url("img/telegram_hover.svg");
   outline: 1px solid #CD06FF;
+  transition-duration: 0.2s;
 }
 
 .social__link_type_telegram:active {
   background-image: url("img/telegram_active.svg");
   outline: none;
+  transition-duration: 0.2s;
 }
 
 .social__link_type_pinterest {
@@ -110,16 +122,19 @@
 
 .social__link_type_pinterest:hover {
   background-image: url("img/pinterest_hover.svg");
+  transition-duration: 0.2s;
 }
 
 .social__link_type_pinterest:focus {
   background-image: url("img/pinterest_hover.svg");
   outline: 1px solid #CD06FF;
+  transition-duration: 0.2s;
 }
 
 .social__link_type_pinterest:active {
   background-image: url("img/pinterest_active.svg");
   outline: none;
+  transition-duration: 0.2s;
 }
 
 .social__link_type_stumble-upon {
@@ -128,16 +143,19 @@
 
 .social__link_type_stumble-upon:hover {
   background-image: url("img/stumble-upon_hover.svg");
+  transition-duration: 0.2s;
 }
 
 .social__link_type_stumble-upon:focus {
   background-image: url("img/stumble-upon_hover.svg");
   outline: 1px solid #CD06FF;
+  transition-duration: 0.2s;
 }
 
 .social__link_type_stumble-upon:active {
   background-image: url("img/stumble-upon_active.svg");
   outline: none;
+  transition-duration: 0.2s;
 }
 
 .footer__image {
@@ -152,6 +170,11 @@
 .footer__text {
   font-size: 14px;
   line-height: 16px;
+}
+
+.footer__developer-link:hover {
+  color: #EADEED;
+  transition-duration: 0.2s;
 }
 
 .footer__developer-item {

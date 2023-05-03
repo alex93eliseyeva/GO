@@ -11,6 +11,11 @@
   background-repeat: no-repeat;
 }
 
+.features__item:hover {
+  transform: scale(1.1);
+  transition: 0.2s linear;
+}
+
 .features__item_type_vr {
   background-image: url("img/vr.jpg");
 }
