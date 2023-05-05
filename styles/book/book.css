@@ -34,8 +34,7 @@
 }
 
 .book-rooms__input {
-  appearance: none;
-  display: block;
+  display: none;
 }
 
 .book-rooms__label {
@@ -50,25 +49,23 @@
   line-height: 40px;
   font-weight: 700;
   text-align: center;
+  transition-duration: 0.2s;
 }
 
 .book-rooms__label:hover {
   background-color: #EADEED;
   box-shadow: 3px solid #640AA3;
-  transition-duration: 0.2s;
 }
 
 .book-rooms__label:focus {
   background-color: #FFFFFF;
   outline: 3px solid #640AA3;
-  transition-duration: 0.2s;
 }
 
-.book-rooms__label:active {
+.book-rooms__input:checked + .book-rooms__label {
   color: #FFFFFF;
   background-color: #6C0287;
   box-shadow: 3px solid #FFFFFF;
-  transition-duration: 0.2s;
 }
 
 .book-entertainment {
@@ -121,12 +118,12 @@
   margin-right: 12px;
   width: 27px;
   height: 27px;
+  transition-duration: 0.2s;
 }
 
 .book-options__input:focus {
   outline: 1px solid #CD06FF;
   padding: 3px;
-  transition-duration: 0.2s;
 }
 
 .book-data {
@@ -179,6 +176,7 @@
   padding: 12px 20px;
   line-height: 28px;
   color: #211E1E;
+  transition-duration: 0.2s;
 }
 
 .book-data__input:last-child {
@@ -194,7 +192,6 @@
 .book-data__input:focus {
   outline: none;
   border: 2px solid #CD06FF;
-  transition-duration: 0.2s;
 }
 
 .book__button {
@@ -208,21 +205,19 @@
   max-width: 300px;
   border-radius: 10px;
   padding: 16px 50px;
+  transition-duration: 0.2s;
 }
 
 .book__button:hover {
   background-color: #EADEED;
   box-shadow: 3px solid #6C0287;
-  transition-duration: 0.2s;
 }
 
 .book__button:focus {
   background-color: #FFFFFF;
   outline: 3px solid #6C0287;
-  transition-duration: 0.2s;
 }
 
 .book__button:active {
   background-color: #EADEED;
-  transition-duration: 0.2s;
 }

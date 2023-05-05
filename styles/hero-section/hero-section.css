@@ -73,17 +73,16 @@
   background-color: #6C0287;
   border-radius: 10px;
   box-shadow:0 0 20px #6C0287;
+  transition-duration: 0.2s;
 }
 
 .hero-section__link:hover, .hero-section__link:focus {
   background-color: #840AA3;
   outline: none;
-  transition-duration: 0.2s;
 }
 
 .hero-section__link:active {
   background-color: #640AA3;
-  transition-duration: 0.2s;
 }
 
 .hero-section__link-down {
@@ -96,21 +95,19 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: 90px;
+  transition-duration: 0.2s;
 }
 
 .hero-section__link-down:hover {
   background-image: url("img/down_hover.svg");
-  transition-duration: 0.2s;
 }
 
 .hero-section__link-down:focus {
   background-image: url("img/down_focus.svg");
   outline: 1px solid #CD06FF;
-  transition-duration: 0.2s;
 }
 
 .hero-section__link-down:active {
   background-image: url("img/down_active.svg");
-  transition-duration: 0.2s;
 }
 

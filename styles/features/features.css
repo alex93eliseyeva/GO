@@ -9,11 +9,11 @@
   min-height: 228px;
   background-size: contain;
   background-repeat: no-repeat;
+  transition: 0.2s linear;
 }
 
 .features__item:hover {
   transform: scale(1.1);
-  transition: 0.2s linear;
 }
 
 .features__item_type_vr {
