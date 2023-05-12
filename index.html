@@ -62,29 +62,37 @@
       <section class="section features" id="features">
         <div class="container">
           <h2 class="heading features__heading">У нас есть всё для классного<br>отдыха с друзьями</h2>
-
+    
           <ul class="features__list">
-            <li class="features__item features__item_type_vr">
+            <div class="features__wrapper">
+              <li class="features__item features__item_type_vr">
                 <p class="features__text">VR очки</p>
               </li>
+              <li class="features__item features__item_type_boardgames">
+                  <p class="features__text">Настольные игры</p>
+              </li>
+            </div>
+    
+            <div class="features__wrapper">
               <li class="features__item features__item_type_audio">
                 <p class="features__text">Аудио-система 5.1 с отличным звуком</p>
               </li>
+              <li class="features__item features__item_type_netflix">
+                  <p class="features__text">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</p>
+              </li>
+            </div>
+    
+            <div class="features__wrapper">
               <li class="features__item features__item_type_karaoke">
                 <p class="features__text">Караоке (4 микрофона)</p>
-              </li>
-              <li class="features__item features__item_type_boardgames">
-                <p class="features__text">Настольные игры</p>
-              </li>
-              <li class="features__item features__item_type_netflix">
-                <p class="features__text">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</p>
               </li>
               <li class="features__item features__item_type_ps">
                 <p class="features__text">PlayStation 5</p>
               </li>
-            </ul>
-          </div>
-        </section>
+            </div>
+          </ul>
+        </div>
+      </section>
 
         <section class="section rooms" id="rooms">
           <div class="container">
@@ -239,33 +247,30 @@
         <section class="section reviews" id="reviews">
           <div class="container">
             <h2 class="heading reviews__heading">Отзывы посетителей</h2>
-
+      
             <ul class="reviews__list">
               <li class="reviews__item">
-                <figure class="reviews__userpic">
-                  <img class="reviews__image" src="styles/reviews/img/max.jpeg" alt="Фото посетителя Макса Самойлова" width="280" height="280">
-                  <figcaption class="reviews__text reviews__text_type_username">Макс Самойлов</figcaption>
-                </figure>
-
-                <p class="reviews__text">Отмечали день рождения с компанией друзей, всё было очень круто! WR очки это просто бомба, никогда ещё я не был в таком полном игровом погружении. Сервис на высоте!</p>
-              </li>
-
+                  <div class="reviews__wrapper">
+                    <span class="reviews__span reviews__span_type_one">Макс Самойлов</span>
+        
+                    <p class="reviews__text reviews__text_type_main">Отмечали день рождения с компанией друзей, всё было очень круто! WR очки это просто бомба, никогда ещё я не был в таком полном игровом погружении. Сервис на высоте!</p>
+                  </div>
+                </li>
+      
               <li class="reviews__item">
-                <figure class="reviews__userpic">
-                  <img class="reviews__image" src="styles/reviews/img/oxana.jpeg" alt="Фото посетителя Оксаны Григорьевой" width="280" height="280">
-                  <figcaption class="reviews__text reviews__text_type_username">Оксана Григорьева</figcaption>
-                </figure>
-
-                <p class="reviews__text">Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе больше нет подобных заведений</p>
-              </li>
-            
+                  <div class="reviews__wrapper">
+                    <span class="reviews__span reviews__span_type_two">Оксана Григорьева</span>
+        
+                    <p class="reviews__text reviews__text_type_main">Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе больше нет подобных заведений</p>
+                  </div>
+                </li>
+      
               <li class="reviews__item">
-                <figure class="reviews__userpic">
-                  <img class="reviews__image" src="styles/reviews/img/nikita.jpg" alt="Фото посетителя Никиты Ященко" width="280" height="280">
-                  <figcaption class="reviews__text reviews__text_type_username">Никита Ященко</figcaption>
-                </figure>
-
-                <p class="reviews__text">Немного подвисала игра в VR очках, а так всё норм. Крутое оформление комнаты в стиле звёздных войн. Попал в атмосферу космоса</p>
+                <div class="reviews__wrapper">
+                  <span class="reviews__span reviews__span_type_three">Никита Ященко</span>
+      
+                  <p class="reviews__text reviews__text_type_main">Немного подвисала игра в VR очках, а так всё норм. Крутое оформление комнаты в стиле звёздных войн. Попал в атмосферу космоса</p>
+                </div>
               </li>
             </ul>
           </div>
