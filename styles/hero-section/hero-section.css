@@ -43,7 +43,7 @@
 
 .hero-section__feature {
   font-weight: 900;
-  color: #CD06FF;
+  color: var(--states-color);
 }
 
 .hero-section__feature_type_rooms {
@@ -54,7 +54,7 @@
 .hero-section__feature_type_new {
   font-size: 75px;
   line-height: 106px;
-  text-transform: uppercase;
+  font-variant: all-small-caps;
 }
 
 .hero-section__feature-text {
@@ -67,22 +67,22 @@
   font-size: 26px;
   line-height: 30px;
   font-weight: 700;
-  color: #FFFFFF;
+  color: var(--text-color);
   text-transform: uppercase;
   padding: 25px 69px;
-  background-color: #6C0287;
+  background-color: var(--buttons-color);
   border-radius: 10px;
-  box-shadow:0 0 20px #6C0287;
+  box-shadow:0 0 20px var(--buttons-color);
   transition-duration: 0.2s;
 }
 
 .hero-section__link:hover, .hero-section__link:focus {
-  background-color: #840AA3;
+  background-color: var(--focus-buttons-link);
   outline: none;
 }
 
 .hero-section__link:active {
-  background-color: #640AA3;
+  background-color: var(--active-buttons-color);
 }
 
 .hero-section__link-down {
@@ -104,7 +104,7 @@
 
 .hero-section__link-down:focus {
   background-image: url("img/down_focus.svg");
-  outline: 1px solid #CD06FF;
+  outline: 1px solid var(--states-color);
 }
 
 .hero-section__link-down:active {

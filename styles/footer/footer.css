@@ -1,5 +1,5 @@
 .footer {
-  background: linear-gradient(#1B1A1B, #370A37);
+  background: linear-gradient(var(--footer-gradient));
   padding-bottom: 10px;
   padding-top: 50px;
 }
@@ -33,12 +33,12 @@
   
 .address__link {
   text-decoration: none;
-  color: #FFFFFF;
+  color: var(--text-color);
   transition-duration: 0.2s;
 }
 
 .address__link:hover {
-  color: #EADEED;
+  color: var(--hover-buttons-color);
 }
   
 .address__contacts_type_phone {
@@ -80,16 +80,16 @@
 }
 
 .social__link_type_vk:hover {
-  color: #EADEED;
+  color: var(--hover-buttons-color);
 }
 
 .social__link_type_vk:focus {
-  color:  #EADEED;
-  outline: 1px solid #CD06FF;
+  color:  var(--hover-buttons-color);
+  outline: 1px solid var(--states-color);
 }
 
 .social__link_type_vk:active {
-  color: #CD06FF;
+  color: var(--states-color);
   outline: none;
 }
 
@@ -99,16 +99,16 @@
 }
 
 .social__link_type_telegram:hover {
-  color: #EADEED;
+  color: var(--hover-buttons-color);
 }
 
 .social__link_type_telegram:focus {
-  color:  #EADEED;
-  outline: 1px solid #CD06FF;
+  color:  var(--hover-buttons-color);
+  outline: 1px solid var(--states-color);
 }
 
 .social__link_type_telegram:active {
-  color: #CD06FF;
+  color: var(--states-color);
   outline: none;
 }
 
@@ -118,16 +118,16 @@
 }
 
 .social__link_type_pinterest:hover {
-  color: #EADEED;
+  color: var(--hover-buttons-color);
 }
 
 .social__link_type_pinterest:focus {
-  color:  #EADEED;
-  outline: 1px solid #CD06FF;
+  color:  var(--hover-buttons-color);
+  outline: 1px solid var(--states-color);
 }
 
 .social__link_type_pinterest:active {
-  color: #CD06FF;
+  color: var(--states-color);
   outline: none;
 }
 
@@ -137,16 +137,16 @@
 }
 
 .social__link_type_stumble-upon:hover {
-  color: #EADEED;
+  color: var(--hover-buttons-color);
 }
 
 .social__link_type_stumble-upon:focus {
-  color:  #EADEED;
-  outline: 1px solid #CD06FF;
+  color:  var(--hover-buttons-color);
+  outline: 1px solid var(--states-color);
 }
 
 .social__link_type_stumble-upon:active {
-  color: #CD06FF;
+  color: var(--states-color);
   outline: none;
 }
 
@@ -165,7 +165,7 @@
 }
 
 .footer__developer-link:hover {
-  color: #EADEED;
+  color: var(--hover-buttons-color);
   transition-duration: 0.2s;
 }
 

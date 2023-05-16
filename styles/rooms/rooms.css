@@ -22,7 +22,7 @@
   
 .rooms__link {
   text-decoration: none;
-  color: #FFFFFF;
+  color: var(--text-color);
   font-size: 70px;
   font-weight: 700;
   line-height: 80px;
@@ -34,7 +34,7 @@
 }
 
 .rooms__link:hover {
-  color: #EADEED;
+  color: var(--hover-menu-color);
 }
   
 .rooms__item_type_vibes {

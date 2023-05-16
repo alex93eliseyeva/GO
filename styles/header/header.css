@@ -21,7 +21,7 @@
 }
 
 .header__link:hover {
-  color: #EADEED;
+  color: var(--hover-menu-color);
 }
 
 .header__button {
@@ -29,21 +29,21 @@
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: var(--text-color);
   background-color: transparent;
-  border: 3px solid #CD06FF;
+  border: 3px solid var(--states-color);
   border-radius: 10px;
   padding: 12px 32px;
   transition-duration: 0.2s;
 }
 
 .header__button:hover, .header__button:focus {
-  background-color: #6C0287;
-  border-color: #6C0287;
+  background-color: var(--buttons-color);
+  border-color: var(--buttons-color);
   outline: none;
 }
 
 .header__button:active {
-  border-color: #000000;
-  background-color: #640AA3;
+  border-color: var(--text-label-color);
+  background-color: var(--active-buttons-color);
 }

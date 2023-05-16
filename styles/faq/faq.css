@@ -18,13 +18,13 @@
 }
 
 .faq__item:nth-child(odd) {
-  background-color: #fff;
-  color: #1C1A1A;
+  background-color: var(--text-color);
+  color: var(--faq-text-color);
 }
 
 .faq__item:nth-child(even) {
-  background-color: #440F51;
-  color: #FFFFFF;
+  background-color: var(--book-color);
+  color: var(--text-color);
 }
 
 .faq__item:after {

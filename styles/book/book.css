@@ -1,5 +1,5 @@
 .book {
-  background-color: #440F51;
+  background-color: var(--book-color);
   padding: 80px 0 96px 0;
 }
 .book__fieldset {
@@ -40,10 +40,10 @@
 .book-rooms__label {
   display: block;
   padding: 7px 15px 8px;
-  background-color: #FFFFFF;
+  background-color: var(--text-color);
   text-transform: uppercase;
   border-radius: 8px;
-  color: #000000;
+  color: var(--text-label-color);
   min-width: 250px;
   font-size: 30px;
   line-height: 40px;
@@ -53,19 +53,19 @@
 }
 
 .book-rooms__label:hover {
-  background-color: #EADEED;
-  box-shadow: 3px solid #640AA3;
+  background-color: var(--hover-buttons-color);
+  box-shadow: 3px solid var(--active-buttons-color);
 }
 
 .book-rooms__label:focus {
-  background-color: #FFFFFF;
-  outline: 3px solid #640AA3;
+  background-color: var(--text-color);
+  outline: 3px solid var(--active-buttons-color);
 }
 
 .book-rooms__input:checked + .book-rooms__label {
-  color: #FFFFFF;
-  background-color: #6C0287;
-  box-shadow: 3px solid #FFFFFF;
+  color: var(--text-color);
+  background-color: var(--buttons-color);
+  box-shadow: 3px solid var(--text-color);
 }
 
 .book-entertainment {
@@ -122,7 +122,7 @@
 }
 
 .book-options__input:focus {
-  outline: 1px solid #CD06FF;
+  outline: 1px solid var(--states-color);
   padding: 3px;
 }
 
@@ -175,7 +175,7 @@
   font-size: 18px;
   padding: 12px 20px;
   line-height: 28px;
-  color: #211E1E;
+  color: var(--input-text-color);
   transition-duration: 0.2s;
 }
 
@@ -191,13 +191,13 @@
 
 .book-data__input:focus {
   outline: none;
-  border: 2px solid #CD06FF;
+  border: 2px solid var(--states-color);
 }
 
 .book__button {
   display: block;
-  color: #6C0287;
-  background-color: #FFFFFF;
+  color: var(--buttons-color);
+  background-color: var(--text-color);
   font-size: 22px;
   font-weight: 700;
   line-height: 28px;
@@ -209,15 +209,15 @@
 }
 
 .book__button:hover {
-  background-color: #EADEED;
-  box-shadow: 3px solid #6C0287;
+  background-color: var(--hover-buttons-color);
+  box-shadow: 3px solid var(--buttons-color);
 }
 
 .book__button:focus {
-  background-color: #FFFFFF;
-  outline: 3px solid #6C0287;
+  background-color: var(--text-color);
+  outline: 3px solid var(--buttons-color);
 }
 
 .book__button:active {
-  background-color: #EADEED;
+  background-color: var(--hover-buttons-color);
 }
